@@ -29,6 +29,16 @@ public class MasterController {
         return masterService.getAllMasters();
     }
 
-    // Методы для обновления и удаления
+    @PutMapping("/{id}")
+    public ResponseEntity<Master> updateMaster(@PathVariable(value = "id") Long masterId,
+                                               @RequestBody Master masterDetails) {
+        Master updatedMaster = masterService.updateMaster(masterId, masterDetails);
+        return ResponseEntity.ok(updatedMaster);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deleteMaster(@PathVariable(value = "id") Long masterId) {
+        return masterService.deleteMaster(masterId);
+    }
 }
 
