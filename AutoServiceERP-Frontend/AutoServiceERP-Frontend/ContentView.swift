@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var inputText: String = ""
-    
     var body: some View {
-        TextField("Введите текст...", text: $inputText)
-            .padding()
-            .textFieldStyle(RoundedBorderTextFieldStyle())
+        Button("Добавить мастера") {
+            let newMaster = Master(name: "Иван Иванович")
+            NetworkManager.shared.addMaster(master: newMaster) { success in
+                if success {
+                    print("Мастер успешно добавлен")
+                } else {
+                    print("Ошибка при добавлении мастера")
+                }
+            }
+        }
     }
 }
+

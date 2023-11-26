@@ -11,10 +11,11 @@
 		1F7635CA2AE86D3800D2A8FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7635C92AE86D3800D2A8FB /* ContentView.swift */; };
 		1F7635CC2AE86D3900D2A8FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7635CB2AE86D3900D2A8FB /* Assets.xcassets */; };
 		1F7635CF2AE86D3900D2A8FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7635CE2AE86D3900D2A8FB /* Preview Assets.xcassets */; };
-		1F7635D12AE86D3900D2A8FB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7635D02AE86D3900D2A8FB /* Persistence.swift */; };
 		1F7635DE2AE86D3A00D2A8FB /* AutoServiceERP_FrontendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7635DD2AE86D3A00D2A8FB /* AutoServiceERP_FrontendTests.swift */; };
 		1F7635E82AE86D3A00D2A8FB /* AutoServiceERP_FrontendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7635E72AE86D3A00D2A8FB /* AutoServiceERP_FrontendUITests.swift */; };
 		1F7635EA2AE86D3A00D2A8FB /* AutoServiceERP_FrontendUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7635E92AE86D3A00D2A8FB /* AutoServiceERP_FrontendUITestsLaunchTests.swift */; };
+		1FCFA6E22B1108E000B8C198 /* Master.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6E12B1108E000B8C198 /* Master.swift */; };
+		1FCFA6E42B11091A00B8C198 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6E32B11091A00B8C198 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,12 +41,13 @@
 		1F7635C92AE86D3800D2A8FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1F7635CB2AE86D3900D2A8FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F7635CE2AE86D3900D2A8FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1F7635D02AE86D3900D2A8FB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		1F7635D92AE86D3A00D2A8FB /* AutoServiceERP-FrontendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AutoServiceERP-FrontendTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F7635DD2AE86D3A00D2A8FB /* AutoServiceERP_FrontendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoServiceERP_FrontendTests.swift; sourceTree = "<group>"; };
 		1F7635E32AE86D3A00D2A8FB /* AutoServiceERP-FrontendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AutoServiceERP-FrontendUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F7635E72AE86D3A00D2A8FB /* AutoServiceERP_FrontendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoServiceERP_FrontendUITests.swift; sourceTree = "<group>"; };
 		1F7635E92AE86D3A00D2A8FB /* AutoServiceERP_FrontendUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoServiceERP_FrontendUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1FCFA6E12B1108E000B8C198 /* Master.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Master.swift; sourceTree = "<group>"; };
+		1FCFA6E32B11091A00B8C198 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,9 @@
 				1F7635C72AE86D3800D2A8FB /* AutoServiceERP_FrontendApp.swift */,
 				1F7635C92AE86D3800D2A8FB /* ContentView.swift */,
 				1F7635CB2AE86D3900D2A8FB /* Assets.xcassets */,
-				1F7635D02AE86D3900D2A8FB /* Persistence.swift */,
 				1F7635CD2AE86D3900D2A8FB /* Preview Content */,
+				1FCFA6E12B1108E000B8C198 /* Master.swift */,
+				1FCFA6E32B11091A00B8C198 /* NetworkManager.swift */,
 			);
 			path = "AutoServiceERP-Frontend";
 			sourceTree = "<group>";
@@ -260,9 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F7635D12AE86D3900D2A8FB /* Persistence.swift in Sources */,
 				1F7635CA2AE86D3800D2A8FB /* ContentView.swift in Sources */,
+				1FCFA6E42B11091A00B8C198 /* NetworkManager.swift in Sources */,
 				1F7635C82AE86D3800D2A8FB /* AutoServiceERP_FrontendApp.swift in Sources */,
+				1FCFA6E22B1108E000B8C198 /* Master.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
