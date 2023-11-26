@@ -16,6 +16,11 @@
 		1F7635EA2AE86D3A00D2A8FB /* AutoServiceERP_FrontendUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7635E92AE86D3A00D2A8FB /* AutoServiceERP_FrontendUITestsLaunchTests.swift */; };
 		1FCFA6E22B1108E000B8C198 /* Master.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6E12B1108E000B8C198 /* Master.swift */; };
 		1FCFA6E42B11091A00B8C198 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6E32B11091A00B8C198 /* NetworkManager.swift */; };
+		1FCFA6E72B13A87200B8C198 /* MasterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6E62B13A87200B8C198 /* MasterListView.swift */; };
+		1FCFA6E92B13A9B600B8C198 /* CarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6E82B13A9B600B8C198 /* CarListView.swift */; };
+		1FCFA6EB2B13A9C000B8C198 /* ServiceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6EA2B13A9C000B8C198 /* ServiceListView.swift */; };
+		1FCFA6ED2B13D3D000B8C198 /* AddMasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6EC2B13D3D000B8C198 /* AddMasterView.swift */; };
+		1FCFA6F12B13DD6A00B8C198 /* EditMasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6F02B13DD6A00B8C198 /* EditMasterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,11 @@
 		1F7635E92AE86D3A00D2A8FB /* AutoServiceERP_FrontendUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoServiceERP_FrontendUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1FCFA6E12B1108E000B8C198 /* Master.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Master.swift; sourceTree = "<group>"; };
 		1FCFA6E32B11091A00B8C198 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1FCFA6E62B13A87200B8C198 /* MasterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterListView.swift; sourceTree = "<group>"; };
+		1FCFA6E82B13A9B600B8C198 /* CarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListView.swift; sourceTree = "<group>"; };
+		1FCFA6EA2B13A9C000B8C198 /* ServiceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListView.swift; sourceTree = "<group>"; };
+		1FCFA6EC2B13D3D000B8C198 /* AddMasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMasterView.swift; sourceTree = "<group>"; };
+		1FCFA6F02B13DD6A00B8C198 /* EditMasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMasterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,7 @@
 		1F7635C62AE86D3800D2A8FB /* AutoServiceERP-Frontend */ = {
 			isa = PBXGroup;
 			children = (
+				1FCFA6E52B13A83100B8C198 /* SpravochnikiView */,
 				1F7635C72AE86D3800D2A8FB /* AutoServiceERP_FrontendApp.swift */,
 				1F7635C92AE86D3800D2A8FB /* ContentView.swift */,
 				1F7635CB2AE86D3900D2A8FB /* Assets.xcassets */,
@@ -131,6 +142,26 @@
 				1F7635E92AE86D3A00D2A8FB /* AutoServiceERP_FrontendUITestsLaunchTests.swift */,
 			);
 			path = "AutoServiceERP-FrontendUITests";
+			sourceTree = "<group>";
+		};
+		1FCFA6E52B13A83100B8C198 /* SpravochnikiView */ = {
+			isa = PBXGroup;
+			children = (
+				1FCFA6EE2B13D3F300B8C198 /* MasterListView */,
+				1FCFA6E82B13A9B600B8C198 /* CarListView.swift */,
+				1FCFA6EA2B13A9C000B8C198 /* ServiceListView.swift */,
+			);
+			path = SpravochnikiView;
+			sourceTree = "<group>";
+		};
+		1FCFA6EE2B13D3F300B8C198 /* MasterListView */ = {
+			isa = PBXGroup;
+			children = (
+				1FCFA6E62B13A87200B8C198 /* MasterListView.swift */,
+				1FCFA6EC2B13D3D000B8C198 /* AddMasterView.swift */,
+				1FCFA6F02B13DD6A00B8C198 /* EditMasterView.swift */,
+			);
+			path = MasterListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +295,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F7635CA2AE86D3800D2A8FB /* ContentView.swift in Sources */,
+				1FCFA6E72B13A87200B8C198 /* MasterListView.swift in Sources */,
+				1FCFA6F12B13DD6A00B8C198 /* EditMasterView.swift in Sources */,
 				1FCFA6E42B11091A00B8C198 /* NetworkManager.swift in Sources */,
 				1F7635C82AE86D3800D2A8FB /* AutoServiceERP_FrontendApp.swift in Sources */,
 				1FCFA6E22B1108E000B8C198 /* Master.swift in Sources */,
+				1FCFA6EB2B13A9C000B8C198 /* ServiceListView.swift in Sources */,
+				1FCFA6ED2B13D3D000B8C198 /* AddMasterView.swift in Sources */,
+				1FCFA6E92B13A9B600B8C198 /* CarListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
