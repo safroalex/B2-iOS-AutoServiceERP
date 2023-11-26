@@ -14,13 +14,16 @@ struct MasterListView: View {
     var body: some View {
         List {
             ForEach(masters, id: \.id) { master in
-                Text(master.name)
+                NavigationLink(destination: EditMasterView(master: master, onMasterUpdated: fetchMasters)) {
+                    Text(master.name)
+                }
             }
+            .onDelete(perform: deleteMaster)
         }
         .navigationTitle("Мастера")
         .toolbar {
             ToolbarItemGroup(placement: .navigationBarTrailing) {
-                Button(action: { fetchMasters() }) {
+                Button(action: fetchMasters) {
                     Text("Обновить")
                 }
                 Button(action: { showingAddMasterView = true }) {
@@ -36,6 +39,21 @@ struct MasterListView: View {
     private func fetchMasters() {
         NetworkManager.shared.fetchMasters { fetchedMasters in
             self.masters = fetchedMasters
+        }
+    }
+    
+    private func deleteMaster(at offsets: IndexSet) {
+        offsets.forEach { index in
+            let masterId = masters[index].id ?? 0
+            NetworkManager.shared.deleteMaster(masterId: masterId) { success in
+                if success {
+                    DispatchQueue.main.async {
+                        masters.remove(at: index)
+                    }
+                } else {
+                    // Обработка ошибок
+                }
+            }
         }
     }
 }

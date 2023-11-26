@@ -124,5 +124,32 @@ class NetworkManager {
             completion(true)
         }.resume()
     }
+    
+    func deleteMaster(masterId: Int, completion: @escaping (Bool) -> Void) {
+        guard let url = URL(string: "http://localhost:8080/api/masters/\(masterId)") else {
+            print("Invalid URL")
+            completion(false)
+            return
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "DELETE"
+
+        URLSession.shared.dataTask(with: request) { _, response, error in
+            if let error = error {
+                print("Error making request: \(error.localizedDescription)")
+                completion(false)
+                return
+            }
+
+            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+                print("Invalid response from server")
+                completion(false)
+                return
+            }
+
+            completion(true)
+        }.resume()
+    }
 }
 
