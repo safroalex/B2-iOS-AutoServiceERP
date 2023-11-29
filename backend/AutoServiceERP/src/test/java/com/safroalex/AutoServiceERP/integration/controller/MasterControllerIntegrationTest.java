@@ -18,7 +18,11 @@ import java.util.Optional;
 
 import com.safroalex.AutoServiceERP.model.Master;
 
+import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.notNullValue;
+
 import org.junit.jupiter.api.Test;
+
 
 import org.springframework.http.MediaType;
 
@@ -66,9 +70,58 @@ public class MasterControllerIntegrationTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.name").value("Иван Иванович"));
 
-        // После того, как запрос к API выполнен, проверяем, что данные были сохранены в базе данных
-//        Optional<Master> savedMaster = masterRepository.findByName("Иван Иванович");
-//        assertTrue(savedMaster.isPresent());
-//        assertEquals("Иван Иванович", savedMaster.get().getName());
+        Optional<Master> savedMaster = masterRepository.findByName("Иван Иванович");
+        assertTrue(savedMaster.isPresent());
+        assertEquals("Иван Иванович", savedMaster.get().getName());
     }
+
+    @Test
+    void testGetAllMasters() throws Exception {
+        // Добавляем мастера в базу данных
+        Master testMaster = new Master();
+        testMaster.setName("Петр Петрович");
+        masterRepository.save(testMaster);
+
+        // Теперь выполняем тест
+        mockMvc.perform(get("/api/masters"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(greaterThanOrEqualTo(1))))
+                .andExpect(jsonPath("$[0].name", is("Петр Петрович")));
+    }
+
+
+    @Test
+    void testUpdateMaster() throws Exception {
+        // Создаем нового мастера для обновления
+        Master master = new Master();
+        master.setName("Петр Петрович");
+        Master savedMaster = masterRepository.save(master);
+
+        // Обновляем данные мастера
+        Master updatedInfo = new Master();
+        updatedInfo.setName("Петр Измененный");
+
+        mockMvc.perform(put("/api/masters/" + savedMaster.getId())
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(updatedInfo)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.name").value("Петр Измененный"));
+    }
+
+    @Test
+    void testDeleteMaster() throws Exception {
+        // Создаем нового мастера для удаления
+        Master master = new Master();
+        master.setName("Мастер для удаления");
+        Master savedMaster = masterRepository.save(master);
+
+        // Удаляем мастера
+        mockMvc.perform(delete("/api/masters/" + savedMaster.getId()))
+                .andExpect(status().isOk());
+
+        // Проверяем, что мастер больше не существует в базе данных
+        Optional<Master> deletedMaster = masterRepository.findById(savedMaster.getId());
+        assertTrue(deletedMaster.isEmpty());
+    }
+
 }

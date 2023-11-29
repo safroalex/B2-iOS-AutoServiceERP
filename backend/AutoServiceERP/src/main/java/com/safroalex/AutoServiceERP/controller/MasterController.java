@@ -1,4 +1,4 @@
-package com.safroalex.AutoServiceERP.сontroller;
+package com.safroalex.AutoServiceERP.controller;
 
 import com.safroalex.AutoServiceERP.model.Master;
 import com.safroalex.AutoServiceERP.service.MasterService;

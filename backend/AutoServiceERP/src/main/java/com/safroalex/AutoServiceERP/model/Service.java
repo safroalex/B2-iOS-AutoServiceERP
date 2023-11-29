@@ -6,12 +6,13 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Master {
+public class Service {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-
+    private Double costOur;
+    private Double costForeign;
 
     // Геттер для id
     public Long getId() {
@@ -31,4 +32,25 @@ public class Master {
     // Сеттер для name
     public void setName(String name) {
         this.name = name;
-    }}
+    }
+
+    // Геттер для costOur
+    public Double getCostOur() {
+        return costOur;
+    }
+
+    // Сеттер для costOur
+    public void setCostOur(Double costOur) {
+        this.costOur = costOur;
+    }
+
+    // Геттер для costForeign
+    public Double getCostForeign() {
+        return costForeign;
+    }
+
+    // Сеттер для costForeign
+    public void setCostForeign(Double costForeign) {
+        this.costForeign = costForeign;
+    }
+}

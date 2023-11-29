@@ -3,7 +3,7 @@ package com.safroalex.AutoServiceERP.unit.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.safroalex.AutoServiceERP.model.Master;
 import com.safroalex.AutoServiceERP.service.MasterService;
-import com.safroalex.AutoServiceERP.сontroller.MasterController;
+import com.safroalex.AutoServiceERP.controller.MasterController;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
