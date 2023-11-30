@@ -119,5 +119,4 @@ public class ServiceControllerIntegrationTest {
         Optional<Service> deletedService = serviceRepository.findById(savedService.getId());
         assertTrue(deletedService.isEmpty());
     }
-
 }

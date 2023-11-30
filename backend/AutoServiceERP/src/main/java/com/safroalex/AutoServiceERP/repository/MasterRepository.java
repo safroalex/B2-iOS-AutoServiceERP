@@ -1,7 +1,6 @@
 package com.safroalex.AutoServiceERP.repository;
 
 import com.safroalex.AutoServiceERP.model.Master;
-import com.safroalex.AutoServiceERP.model.Service;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
