@@ -41,6 +41,10 @@ This repository serves as a portfolio project aimed at creating a database syste
 
 - https://hibernate.org/
 
+- https://jakarta.ee/
+
+- https://tomcat.apache.org/
+
 ## License
 
 MIT License. For more information, see the [LICENSE](LICENSE) file.
