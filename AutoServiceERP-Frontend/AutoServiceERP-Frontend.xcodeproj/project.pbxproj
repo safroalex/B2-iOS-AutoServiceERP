@@ -8,14 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		1F7635C82AE86D3800D2A8FB /* AutoServiceERP_FrontendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7635C72AE86D3800D2A8FB /* AutoServiceERP_FrontendApp.swift */; };
-		1F7635CA2AE86D3800D2A8FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7635C92AE86D3800D2A8FB /* ContentView.swift */; };
 		1F7635CC2AE86D3900D2A8FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7635CB2AE86D3900D2A8FB /* Assets.xcassets */; };
 		1F7635CF2AE86D3900D2A8FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7635CE2AE86D3900D2A8FB /* Preview Assets.xcassets */; };
 		1F7635DE2AE86D3A00D2A8FB /* AutoServiceERP_FrontendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7635DD2AE86D3A00D2A8FB /* AutoServiceERP_FrontendTests.swift */; };
 		1F7635E82AE86D3A00D2A8FB /* AutoServiceERP_FrontendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7635E72AE86D3A00D2A8FB /* AutoServiceERP_FrontendUITests.swift */; };
 		1F7635EA2AE86D3A00D2A8FB /* AutoServiceERP_FrontendUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7635E92AE86D3A00D2A8FB /* AutoServiceERP_FrontendUITestsLaunchTests.swift */; };
+		1F82783B2B1A3E55008F45B8 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82783A2B1A3E55008F45B8 /* Service.swift */; };
+		1F82783D2B1A3E6C008F45B8 /* ServiceNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82783C2B1A3E6C008F45B8 /* ServiceNetworkManager.swift */; };
+		1F82783F2B1A3FA6008F45B8 /* AddServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82783E2B1A3FA6008F45B8 /* AddServiceView.swift */; };
+		1F8278412B1A3FFB008F45B8 /* EditServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8278402B1A3FFB008F45B8 /* EditServiceView.swift */; };
+		1F8278432B1A4CA0008F45B8 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8278422B1A4CA0008F45B8 /* Car.swift */; };
+		1F8278452B1A4D1F008F45B8 /* CarNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8278442B1A4D1F008F45B8 /* CarNetworkManager.swift */; };
+		1F8278472B1A533F008F45B8 /* AddCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8278462B1A533F008F45B8 /* AddCarView.swift */; };
+		1F8278492B1A534D008F45B8 /* EditCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8278482B1A534D008F45B8 /* EditCarView.swift */; };
 		1FCFA6E22B1108E000B8C198 /* Master.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6E12B1108E000B8C198 /* Master.swift */; };
-		1FCFA6E42B11091A00B8C198 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6E32B11091A00B8C198 /* NetworkManager.swift */; };
+		1FCFA6E42B11091A00B8C198 /* MasterNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6E32B11091A00B8C198 /* MasterNetworkManager.swift */; };
 		1FCFA6E72B13A87200B8C198 /* MasterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6E62B13A87200B8C198 /* MasterListView.swift */; };
 		1FCFA6E92B13A9B600B8C198 /* CarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6E82B13A9B600B8C198 /* CarListView.swift */; };
 		1FCFA6EB2B13A9C000B8C198 /* ServiceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6EA2B13A9C000B8C198 /* ServiceListView.swift */; };
@@ -43,7 +50,6 @@
 /* Begin PBXFileReference section */
 		1F7635C42AE86D3800D2A8FB /* AutoServiceERP-Frontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutoServiceERP-Frontend.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F7635C72AE86D3800D2A8FB /* AutoServiceERP_FrontendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoServiceERP_FrontendApp.swift; sourceTree = "<group>"; };
-		1F7635C92AE86D3800D2A8FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1F7635CB2AE86D3900D2A8FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F7635CE2AE86D3900D2A8FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1F7635D92AE86D3A00D2A8FB /* AutoServiceERP-FrontendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AutoServiceERP-FrontendTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,8 +57,16 @@
 		1F7635E32AE86D3A00D2A8FB /* AutoServiceERP-FrontendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AutoServiceERP-FrontendUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F7635E72AE86D3A00D2A8FB /* AutoServiceERP_FrontendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoServiceERP_FrontendUITests.swift; sourceTree = "<group>"; };
 		1F7635E92AE86D3A00D2A8FB /* AutoServiceERP_FrontendUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoServiceERP_FrontendUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1F82783A2B1A3E55008F45B8 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		1F82783C2B1A3E6C008F45B8 /* ServiceNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceNetworkManager.swift; sourceTree = "<group>"; };
+		1F82783E2B1A3FA6008F45B8 /* AddServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServiceView.swift; sourceTree = "<group>"; };
+		1F8278402B1A3FFB008F45B8 /* EditServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditServiceView.swift; sourceTree = "<group>"; };
+		1F8278422B1A4CA0008F45B8 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		1F8278442B1A4D1F008F45B8 /* CarNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarNetworkManager.swift; sourceTree = "<group>"; };
+		1F8278462B1A533F008F45B8 /* AddCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCarView.swift; sourceTree = "<group>"; };
+		1F8278482B1A534D008F45B8 /* EditCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCarView.swift; sourceTree = "<group>"; };
 		1FCFA6E12B1108E000B8C198 /* Master.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Master.swift; sourceTree = "<group>"; };
-		1FCFA6E32B11091A00B8C198 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1FCFA6E32B11091A00B8C198 /* MasterNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterNetworkManager.swift; sourceTree = "<group>"; };
 		1FCFA6E62B13A87200B8C198 /* MasterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterListView.swift; sourceTree = "<group>"; };
 		1FCFA6E82B13A9B600B8C198 /* CarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListView.swift; sourceTree = "<group>"; };
 		1FCFA6EA2B13A9C000B8C198 /* ServiceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListView.swift; sourceTree = "<group>"; };
@@ -108,13 +122,12 @@
 		1F7635C62AE86D3800D2A8FB /* AutoServiceERP-Frontend */ = {
 			isa = PBXGroup;
 			children = (
+				1F8278392B1A3D15008F45B8 /* NetworkManager */,
+				1F8278382B1A3D01008F45B8 /* DataModel */,
 				1FCFA6E52B13A83100B8C198 /* SpravochnikiView */,
 				1F7635C72AE86D3800D2A8FB /* AutoServiceERP_FrontendApp.swift */,
-				1F7635C92AE86D3800D2A8FB /* ContentView.swift */,
 				1F7635CB2AE86D3900D2A8FB /* Assets.xcassets */,
 				1F7635CD2AE86D3900D2A8FB /* Preview Content */,
-				1FCFA6E12B1108E000B8C198 /* Master.swift */,
-				1FCFA6E32B11091A00B8C198 /* NetworkManager.swift */,
 			);
 			path = "AutoServiceERP-Frontend";
 			sourceTree = "<group>";
@@ -144,12 +157,52 @@
 			path = "AutoServiceERP-FrontendUITests";
 			sourceTree = "<group>";
 		};
+		1F8278362B1A3CC0008F45B8 /* CarListView */ = {
+			isa = PBXGroup;
+			children = (
+				1FCFA6E82B13A9B600B8C198 /* CarListView.swift */,
+				1F8278462B1A533F008F45B8 /* AddCarView.swift */,
+				1F8278482B1A534D008F45B8 /* EditCarView.swift */,
+			);
+			path = CarListView;
+			sourceTree = "<group>";
+		};
+		1F8278372B1A3CD6008F45B8 /* ServiceListView */ = {
+			isa = PBXGroup;
+			children = (
+				1FCFA6EA2B13A9C000B8C198 /* ServiceListView.swift */,
+				1F82783E2B1A3FA6008F45B8 /* AddServiceView.swift */,
+				1F8278402B1A3FFB008F45B8 /* EditServiceView.swift */,
+			);
+			path = ServiceListView;
+			sourceTree = "<group>";
+		};
+		1F8278382B1A3D01008F45B8 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				1FCFA6E12B1108E000B8C198 /* Master.swift */,
+				1F82783A2B1A3E55008F45B8 /* Service.swift */,
+				1F8278422B1A4CA0008F45B8 /* Car.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		1F8278392B1A3D15008F45B8 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				1FCFA6E32B11091A00B8C198 /* MasterNetworkManager.swift */,
+				1F82783C2B1A3E6C008F45B8 /* ServiceNetworkManager.swift */,
+				1F8278442B1A4D1F008F45B8 /* CarNetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
 		1FCFA6E52B13A83100B8C198 /* SpravochnikiView */ = {
 			isa = PBXGroup;
 			children = (
+				1F8278372B1A3CD6008F45B8 /* ServiceListView */,
+				1F8278362B1A3CC0008F45B8 /* CarListView */,
 				1FCFA6EE2B13D3F300B8C198 /* MasterListView */,
-				1FCFA6E82B13A9B600B8C198 /* CarListView.swift */,
-				1FCFA6EA2B13A9C000B8C198 /* ServiceListView.swift */,
 			);
 			path = SpravochnikiView;
 			sourceTree = "<group>";
@@ -294,13 +347,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F7635CA2AE86D3800D2A8FB /* ContentView.swift in Sources */,
+				1F82783D2B1A3E6C008F45B8 /* ServiceNetworkManager.swift in Sources */,
 				1FCFA6E72B13A87200B8C198 /* MasterListView.swift in Sources */,
+				1F8278412B1A3FFB008F45B8 /* EditServiceView.swift in Sources */,
+				1F8278492B1A534D008F45B8 /* EditCarView.swift in Sources */,
 				1FCFA6F12B13DD6A00B8C198 /* EditMasterView.swift in Sources */,
-				1FCFA6E42B11091A00B8C198 /* NetworkManager.swift in Sources */,
+				1F8278432B1A4CA0008F45B8 /* Car.swift in Sources */,
+				1FCFA6E42B11091A00B8C198 /* MasterNetworkManager.swift in Sources */,
 				1F7635C82AE86D3800D2A8FB /* AutoServiceERP_FrontendApp.swift in Sources */,
+				1F8278452B1A4D1F008F45B8 /* CarNetworkManager.swift in Sources */,
 				1FCFA6E22B1108E000B8C198 /* Master.swift in Sources */,
+				1F82783F2B1A3FA6008F45B8 /* AddServiceView.swift in Sources */,
+				1F82783B2B1A3E55008F45B8 /* Service.swift in Sources */,
 				1FCFA6EB2B13A9C000B8C198 /* ServiceListView.swift in Sources */,
+				1F8278472B1A533F008F45B8 /* AddCarView.swift in Sources */,
 				1FCFA6ED2B13D3D000B8C198 /* AddMasterView.swift in Sources */,
 				1FCFA6E92B13A9B600B8C198 /* CarListView.swift in Sources */,
 			);

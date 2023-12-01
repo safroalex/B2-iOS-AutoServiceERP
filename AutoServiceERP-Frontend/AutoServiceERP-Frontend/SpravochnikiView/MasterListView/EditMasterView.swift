@@ -27,7 +27,7 @@ struct EditMasterView: View {
             return
         }
 
-        NetworkManager.shared.updateMaster(masterId: masterId, updatedMaster: master) { success in
+        MasterNetworkManager.shared.updateMaster(masterId: masterId, updatedMaster: master) { success in
             if success {
                 print("Мастер успешно обновлен")
                 onMasterUpdated() // Обновление списка мастеров в родительском виде

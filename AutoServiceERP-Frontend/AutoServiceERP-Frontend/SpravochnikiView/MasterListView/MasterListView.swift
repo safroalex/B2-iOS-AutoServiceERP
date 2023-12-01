@@ -37,7 +37,7 @@ struct MasterListView: View {
     }
 
     private func fetchMasters() {
-        NetworkManager.shared.fetchMasters { fetchedMasters in
+        MasterNetworkManager.shared.fetchMasters { fetchedMasters in
             self.masters = fetchedMasters
         }
     }
@@ -45,7 +45,7 @@ struct MasterListView: View {
     private func deleteMaster(at offsets: IndexSet) {
         offsets.forEach { index in
             let masterId = masters[index].id ?? 0
-            NetworkManager.shared.deleteMaster(masterId: masterId) { success in
+            MasterNetworkManager.shared.deleteMaster(masterId: masterId) { success in
                 if success {
                     DispatchQueue.main.async {
                         masters.remove(at: index)

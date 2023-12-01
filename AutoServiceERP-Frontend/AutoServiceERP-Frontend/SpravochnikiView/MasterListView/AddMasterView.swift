@@ -26,7 +26,7 @@ struct AddMasterView: View {
 
     func addMaster() {
         let newMaster = Master(name: name)
-        NetworkManager.shared.addMaster(master: newMaster) { success in
+        MasterNetworkManager.shared.addMaster(master: newMaster) { success in
             if success {
                 masters.append(newMaster)
                 presentationMode.wrappedValue.dismiss()
