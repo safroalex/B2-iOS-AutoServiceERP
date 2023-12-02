@@ -6,7 +6,10 @@ import com.safroalex.AutoServiceERP.repository.WorkRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class WorkService {
@@ -50,5 +53,28 @@ public class WorkService {
         Work work = workRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Work not found with id : " + id));
         workRepository.delete(work);
+    }
+
+    public Map<String, Double> getCostSummary(Date startDate, Date endDate) {
+        List<Work> works = workRepository.findAllByDateWorkBetween(startDate, endDate);
+        System.out.println("Работы: " + works);
+
+        double costOur = 0.0;
+        double costForeign = 0.0;
+
+        for (Work work : works) {
+            System.out.println("Работа: " + work);
+            if (work.getCar().isForeign()) {
+                costForeign += work.getService().getCostForeign();
+            } else {
+                costOur += work.getService().getCostOur();
+            }
+        }
+
+        Map<String, Double> costSummary = new HashMap<>();
+        costSummary.put("costOur", costOur);
+        costSummary.put("costForeign", costForeign);
+
+        return costSummary;
     }
 }

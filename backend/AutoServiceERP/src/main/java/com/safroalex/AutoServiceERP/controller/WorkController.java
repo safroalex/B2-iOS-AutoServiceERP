@@ -3,10 +3,13 @@ package com.safroalex.AutoServiceERP.controller;
 import com.safroalex.AutoServiceERP.model.Work;
 import com.safroalex.AutoServiceERP.service.WorkService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/works")
@@ -52,4 +55,12 @@ public class WorkController {
         workService.deleteWork(id);
         return ResponseEntity.ok().build();
     }
+
+    @GetMapping("/cost-summary")
+    public ResponseEntity<Map<String, Double>> getCostSummary(
+            @RequestParam(required = false) @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'") Date startDate,
+            @RequestParam(required = false) @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'") Date endDate) {
+        return ResponseEntity.ok(workService.getCostSummary(startDate, endDate));
+    }
+
 }
