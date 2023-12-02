@@ -30,28 +30,7 @@ struct MainTabView: View {
     }
 }
 
-struct SpravochnikiHomeView: View {
-    var body: some View {
-        List {
-            NavigationLink(destination: MasterListView()) {
-                Text("Мастера")
-            }
-            NavigationLink(destination: CarListView()) {
-                Text("Автомобили")
-            }
-            NavigationLink(destination: ServiceListView()) {
-                Text("Услуги")
-            }
-        }
-        .navigationTitle("Справочники")
-    }
-}
 
-struct NaznachenieRabotView: View {
-    var body: some View {
-        Text("Назначение Работ")
-    }
-}
 
 struct StatistikaView: View {
     var body: some View {
