@@ -1,5 +1,6 @@
 package com.safroalex.AutoServiceERP.service;
 
+import com.safroalex.AutoServiceERP.exception.CarAlreadyExistsException;
 import com.safroalex.AutoServiceERP.exception.ResourceNotFoundException;
 import com.safroalex.AutoServiceERP.model.Car;
 import com.safroalex.AutoServiceERP.repository.CarRepository;
@@ -8,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CarService {
@@ -19,6 +21,12 @@ public class CarService {
     }
 
     public Car saveCar(Car car) {
+        // Проверяем, существует ли машина с таким же номером
+        Optional<Car> existingCar = carRepository.findByNum(car.getNum());
+        if (existingCar.isPresent()) {
+            throw new CarAlreadyExistsException("Car with number " + car.getNum() + " already exists");
+        }
+
         return carRepository.save(car);
     }
 

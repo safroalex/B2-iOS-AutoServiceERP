@@ -72,6 +72,28 @@ public class CarControllerIntegrationTest {
     }
 
     @Test
+    void testAddExistingCar() throws Exception {
+        // Создаем автомобиль
+        Car car = new Car();
+        car.setNum("XYZ 123");
+        car.setColor("Синий");
+        car.setMark("Toyota");
+        car.setForeign(true);
+        carRepository.save(car);
+
+        // Пытаемся создать тот же автомобиль еще раз
+        mockMvc.perform(post("/api/cars")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(car)))
+                .andExpect(status().isConflict())
+                .andExpect(jsonPath("$.message").value("Car with number " + car.getNum() + " already exists"));
+
+        // Очистка репозитория после теста
+        carRepository.delete(car);
+    }
+
+
+    @Test
     void testGetAllCars() throws Exception {
         // Предполагаем, что в базе данных уже есть некоторые автомобили
         mockMvc.perform(get("/api/cars"))

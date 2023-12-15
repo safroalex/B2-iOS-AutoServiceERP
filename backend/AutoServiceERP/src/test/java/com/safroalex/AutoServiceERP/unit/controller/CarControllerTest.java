@@ -1,6 +1,8 @@
 package com.safroalex.AutoServiceERP.unit.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.safroalex.AutoServiceERP.exception.CarAlreadyExistsException;
+import com.safroalex.AutoServiceERP.exception.GlobalExceptionHandler;
 import com.safroalex.AutoServiceERP.model.Car;
 import com.safroalex.AutoServiceERP.service.CarService;
 import com.safroalex.AutoServiceERP.controller.CarController;
@@ -18,6 +20,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -36,7 +39,10 @@ public class CarControllerTest {
 
     @BeforeEach
     void setUp() {
-        mockMvc = MockMvcBuilders.standaloneSetup(carController).build();
+        mockMvc = MockMvcBuilders
+                .standaloneSetup(carController)
+                .setControllerAdvice(new GlobalExceptionHandler()) // Замените YourGlobalExceptionHandler на класс вашего глобального обработчика исключений
+                .build();
         objectMapper = new ObjectMapper();
     }
 
@@ -54,6 +60,26 @@ public class CarControllerTest {
                         .content(objectMapper.writeValueAsString(car)))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.num").value("XYZ 123"));
+
+        verify(carService, times(1)).saveCar(any(Car.class));
+    }
+
+    @Test
+    void testAddExistingCar() throws Exception {
+        Car car = new Car();
+        car.setNum("XYZ 123");
+        car.setColor("Синий");
+        car.setMark("Toyota");
+        car.setForeign(true);
+
+        // Мокаем поведение сервиса при добавлении существующего автомобиля
+        when(carService.saveCar(any(Car.class))).thenThrow(new CarAlreadyExistsException("Car with number " + car.getNum() + " already exists"));
+
+        mockMvc.perform(post("/api/cars")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(car)))
+                .andExpect(status().isConflict())
+                .andExpect(jsonPath("$.message").value("Car with number " + car.getNum() + " already exists"));
 
         verify(carService, times(1)).saveCar(any(Car.class));
     }
