@@ -25,6 +25,9 @@
 		1F82784D2B1A8F7A008F45B8 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82784C2B1A8F7A008F45B8 /* Work.swift */; };
 		1F82784F2B1A904B008F45B8 /* WorkNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82784E2B1A904B008F45B8 /* WorkNetworkManager.swift */; };
 		1F8278512B1AAC12008F45B8 /* SpravochnikiHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8278502B1AAC12008F45B8 /* SpravochnikiHomeView.swift */; };
+		1FC6FA092B2DAA3F00561BD4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC6FA082B2DAA3F00561BD4 /* LoginView.swift */; };
+		1FC6FA0B2B2DAC4000561BD4 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC6FA0A2B2DAC4000561BD4 /* LoginRequest.swift */; };
+		1FC6FA0D2B2DACDF00561BD4 /* AuthNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC6FA0C2B2DACDF00561BD4 /* AuthNetworkManager.swift */; };
 		1FCFA6E22B1108E000B8C198 /* Master.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6E12B1108E000B8C198 /* Master.swift */; };
 		1FCFA6E42B11091A00B8C198 /* MasterNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6E32B11091A00B8C198 /* MasterNetworkManager.swift */; };
 		1FCFA6E72B13A87200B8C198 /* MasterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFA6E62B13A87200B8C198 /* MasterListView.swift */; };
@@ -73,6 +76,9 @@
 		1F82784C2B1A8F7A008F45B8 /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
 		1F82784E2B1A904B008F45B8 /* WorkNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkNetworkManager.swift; sourceTree = "<group>"; };
 		1F8278502B1AAC12008F45B8 /* SpravochnikiHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpravochnikiHomeView.swift; sourceTree = "<group>"; };
+		1FC6FA082B2DAA3F00561BD4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1FC6FA0A2B2DAC4000561BD4 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		1FC6FA0C2B2DACDF00561BD4 /* AuthNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkManager.swift; sourceTree = "<group>"; };
 		1FCFA6E12B1108E000B8C198 /* Master.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Master.swift; sourceTree = "<group>"; };
 		1FCFA6E32B11091A00B8C198 /* MasterNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterNetworkManager.swift; sourceTree = "<group>"; };
 		1FCFA6E62B13A87200B8C198 /* MasterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterListView.swift; sourceTree = "<group>"; };
@@ -136,6 +142,7 @@
 				1F7635C72AE86D3800D2A8FB /* AutoServiceERP_FrontendApp.swift */,
 				1F8278502B1AAC12008F45B8 /* SpravochnikiHomeView.swift */,
 				1F82784A2B1A8F19008F45B8 /* NaznachenieRabotView.swift */,
+				1FC6FA082B2DAA3F00561BD4 /* LoginView.swift */,
 				1F7635CB2AE86D3900D2A8FB /* Assets.xcassets */,
 				1F7635CD2AE86D3900D2A8FB /* Preview Content */,
 			);
@@ -194,6 +201,7 @@
 				1F82783A2B1A3E55008F45B8 /* Service.swift */,
 				1F8278422B1A4CA0008F45B8 /* Car.swift */,
 				1F82784C2B1A8F7A008F45B8 /* Work.swift */,
+				1FC6FA0A2B2DAC4000561BD4 /* LoginRequest.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -205,6 +213,7 @@
 				1F82783C2B1A3E6C008F45B8 /* ServiceNetworkManager.swift */,
 				1F82784E2B1A904B008F45B8 /* WorkNetworkManager.swift */,
 				1F8278442B1A4D1F008F45B8 /* CarNetworkManager.swift */,
+				1FC6FA0C2B2DACDF00561BD4 /* AuthNetworkManager.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -369,11 +378,14 @@
 				1F82784F2B1A904B008F45B8 /* WorkNetworkManager.swift in Sources */,
 				1F8278432B1A4CA0008F45B8 /* Car.swift in Sources */,
 				1FCFA6E42B11091A00B8C198 /* MasterNetworkManager.swift in Sources */,
+				1FC6FA0B2B2DAC4000561BD4 /* LoginRequest.swift in Sources */,
+				1FC6FA0D2B2DACDF00561BD4 /* AuthNetworkManager.swift in Sources */,
 				1F7635C82AE86D3800D2A8FB /* AutoServiceERP_FrontendApp.swift in Sources */,
 				1F82784B2B1A8F19008F45B8 /* NaznachenieRabotView.swift in Sources */,
 				1F8278452B1A4D1F008F45B8 /* CarNetworkManager.swift in Sources */,
 				1FCFA6E22B1108E000B8C198 /* Master.swift in Sources */,
 				1F82783F2B1A3FA6008F45B8 /* AddServiceView.swift in Sources */,
+				1FC6FA092B2DAA3F00561BD4 /* LoginView.swift in Sources */,
 				1F82783B2B1A3E55008F45B8 /* Service.swift in Sources */,
 				1FCFA6EB2B13A9C000B8C198 /* ServiceListView.swift in Sources */,
 				1F8278472B1A533F008F45B8 /* AddCarView.swift in Sources */,

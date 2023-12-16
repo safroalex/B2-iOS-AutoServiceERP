@@ -14,6 +14,8 @@ struct AddCarView: View {
     @State private var color = ""
     @State private var mark = ""
     @State private var foreign = false
+    @State private var showErrorAlert = false
+    @State private var errorMessage = ""
     @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
@@ -28,6 +30,9 @@ struct AddCarView: View {
                 }
             }
             .navigationTitle("Новый автомобиль")
+            .alert(isPresented: $showErrorAlert) {
+                Alert(title: Text("Ошибка"), message: Text(errorMessage), dismissButton: .default(Text("OK")))
+            }
         }
     }
 
@@ -39,6 +44,8 @@ struct AddCarView: View {
                 presentationMode.wrappedValue.dismiss()
             } else {
                 // Обработка ошибок
+                errorMessage = "Автомобиль с номером \(newCar.num) уже существует"
+                showErrorAlert = true
             }
         }
     }

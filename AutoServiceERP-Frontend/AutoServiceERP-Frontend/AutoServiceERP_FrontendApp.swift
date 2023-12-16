@@ -40,10 +40,17 @@ struct StatistikaView: View {
 
 @main
 struct AutoServiceERP_FrontendApp: App {
+    @State private var isAuthenticated = false
+
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            if isAuthenticated {
+                MainTabView()
+            } else {
+                LoginView(isAuthenticated: $isAuthenticated)
+            }
         }
     }
 }
+
 
