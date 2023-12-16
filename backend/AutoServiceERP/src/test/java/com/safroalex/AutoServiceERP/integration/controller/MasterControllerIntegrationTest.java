@@ -1,6 +1,7 @@
 package com.safroalex.AutoServiceERP.integration.controller;
 
 import com.safroalex.AutoServiceERP.repository.MasterRepository;
+import org.springframework.test.context.ActiveProfiles;
 import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
@@ -36,6 +37,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @SpringBootTest
 @AutoConfigureMockMvc
 @Testcontainers
+@ActiveProfiles("test")
 public class MasterControllerIntegrationTest {
 
     @Container
