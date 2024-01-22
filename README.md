@@ -20,33 +20,73 @@ This repository serves as a portfolio project aimed at creating a database syste
 - **Triggers**: Automatic actions upon certain database events.
 - **Cursors**: Employed for more complicated data selection operations.
 
-## Sources
-- [start.spring.io](https://start.spring.io/#!type=gradle-project&language=java&platformVersion=3.1.6&packaging=jar&jvmVersion=17&groupId=com.safroalex&artifactId=AutoServiceERP%20&name=AutoServiceERP%20&description=AutoServiceERP%20API&packageName=com.safroalex.AutoServiceERP%20&dependencies=web,data-jpa,postgresql,devtools,testcontainers,security)
+## Technology
+- [pgadmin4](https://hub.docker.com/r/dpage/pgadmin4/), [docker-postgres](https://hub.docker.com/_/postgres), [testcontainers](https://testcontainers.com/), 
 
-- [pgadmin4](https://hub.docker.com/r/dpage/pgadmin4/)
+- [restfulapi](https://restfulapi.net/), [postman](https://www.postman.com/)
 
-- https://hub.docker.com/_/postgres
+- [junit](https://junit.org/junit5/)
 
-- https://testcontainers.com/
-
-- https://www.postman.com/
-
-- https://restfulapi.net/
-
-- https://junit.org/junit5/
-
-- https://spring.io/
-
-- https://gradle.org/
-
-- https://hibernate.org/
-
-- https://jakarta.ee/
-
-- https://tomcat.apache.org/
+- [spring](https://spring.io/), [start.spring.io](https://start.spring.io/#!type=gradle-project&language=java&platformVersion=3.1.6&packaging=jar&jvmVersion=17&groupId=com.safroalex&artifactId=AutoServiceERP%20&name=AutoServiceERP%20&description=AutoServiceERP%20API&packageName=com.safroalex.AutoServiceERP%20&dependencies=web,data-jpa,postgresql,devtools,testcontainers,security), [gradle](https://gradle.org/), [hibernate](https://hibernate.org/), [jakarta](https://jakarta.ee/), [tomcat](https://tomcat.apache.org/)
 
 - [BCrypt](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/crypto/bcrypt/BCrypt.html)
 
+- Swift + SwiftUI + Foundation
+
+## Screenshots
+
+  <table>
+	<thead>
+		<tr>
+			<th>Directory</th>
+			<th>Services</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<img src="https://github.com/safroalex/B2-AutoServiceERP/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-12-02%20at%2016.49.28.png" width="300"/>
+			</td>
+			<td>
+				<img src="https://github.com/safroalex/B2-AutoServiceERP/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-12-02%20at%2016.50.38.png" width="300"/>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+  <table>
+	<thead>
+		<tr>
+			<th>Add Service</th>
+			<th>Edit Service</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<img src="https://github.com/safroalex/B2-AutoServiceERP/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-12-02%20at%2016.50.44.png" width="300"/>
+			</td>
+			<td>
+				<img src="https://github.com/safroalex/B2-AutoServiceERP/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-12-02%20at%2016.50.52.png" width="300"/>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th>Add Work</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+      <td>
+				<img src="https://github.com/safroalex/B2-AutoServiceERP/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202023-12-02%20at%2016.51.32.png" width="300"/>
+			</td>
+		</tr>
+	</tbody>
+</table>
 ## License
 
 MIT License. For more information, see the [LICENSE](LICENSE) file.
