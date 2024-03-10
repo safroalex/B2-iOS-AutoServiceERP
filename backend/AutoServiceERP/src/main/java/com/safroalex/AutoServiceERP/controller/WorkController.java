@@ -17,9 +17,7 @@ import java.text.SimpleDateFormat;
 import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
-import java.util.Date;
-import java.util.List;
-import java.util.TimeZone;
+import java.util.*;
 
 @RestController
 @RequestMapping("/api/works")
@@ -69,31 +67,18 @@ public class WorkController {
 
     @GetMapping("/total-cost")
     public ResponseEntity<?> getTotalCost(
-            @RequestParam(value = "fromDate", required = false) String fromDateStr,
-            @RequestParam(value = "toDate", required = false) String toDateStr) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssXXX");
-
-        OffsetDateTime fromDate = null;
-        OffsetDateTime toDate = null;
-
+            @RequestParam(value = "fromDate", required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) OffsetDateTime fromDate,
+            @RequestParam(value = "toDate", required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) OffsetDateTime toDate) {
         try {
-            if (fromDateStr != null) {
-                fromDate = OffsetDateTime.parse(fromDateStr, formatter);
-            }
-            if (toDateStr != null) {
-                toDate = OffsetDateTime.parse(toDateStr, formatter);
-            }
-
-            // Преобразуйте OffsetDateTime обратно в Date, если ваш WorkService ожидает Date
-            // Или обновите WorkService, чтобы работать с OffsetDateTime напрямую
-
-            // Предположим, что ваш WorkService уже обновлен для работы с OffsetDateTime
-            return ResponseEntity.ok(workService.getTotalCost(fromDate, toDate));
-
-        } catch (DateTimeParseException e) {
-            return ResponseEntity.badRequest().body("Неверный формат даты: " + e.getMessage());
+            Double totalCost = workService.getTotalCost(fromDate, toDate);
+            Map<String, Double> response = Collections.singletonMap("totalCost", totalCost);
+            return ResponseEntity.ok(response);
+        } catch (Exception e) {
+            logger.error("Error retrieving total cost", e);
+            return ResponseEntity.badRequest().body("Ошибка при получении данных");
         }
     }
+
 
 
     @GetMapping("/top-masters")

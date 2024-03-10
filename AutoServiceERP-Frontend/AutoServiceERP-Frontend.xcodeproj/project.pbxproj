@@ -31,6 +31,9 @@
 		1F912A062B9E18FE00B6F07B /* TotalCostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F912A052B9E18FE00B6F07B /* TotalCostModel.swift */; };
 		1F912A092B9E193A00B6F07B /* TotalCostNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F912A082B9E193A00B6F07B /* TotalCostNetworkManager.swift */; };
 		1F912A0E2B9E1CBE00B6F07B /* TotalCostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F912A0D2B9E1CBE00B6F07B /* TotalCostViewModel.swift */; };
+		1F912A102B9E4BDC00B6F07B /* TopMastersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F912A0F2B9E4BDC00B6F07B /* TopMastersModel.swift */; };
+		1F912A122B9E4C6500B6F07B /* TopMastersNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F912A112B9E4C6500B6F07B /* TopMastersNetworkManager.swift */; };
+		1F912A142B9E4C9A00B6F07B /* TopMastersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F912A132B9E4C9A00B6F07B /* TopMastersViewModel.swift */; };
 		1FC6FA092B2DAA3F00561BD4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC6FA082B2DAA3F00561BD4 /* LoginView.swift */; };
 		1FC6FA0B2B2DAC4000561BD4 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC6FA0A2B2DAC4000561BD4 /* LoginRequest.swift */; };
 		1FC6FA0D2B2DACDF00561BD4 /* AuthNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC6FA0C2B2DACDF00561BD4 /* AuthNetworkManager.swift */; };
@@ -88,6 +91,9 @@
 		1F912A052B9E18FE00B6F07B /* TotalCostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCostModel.swift; sourceTree = "<group>"; };
 		1F912A082B9E193A00B6F07B /* TotalCostNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCostNetworkManager.swift; sourceTree = "<group>"; };
 		1F912A0D2B9E1CBE00B6F07B /* TotalCostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCostViewModel.swift; sourceTree = "<group>"; };
+		1F912A0F2B9E4BDC00B6F07B /* TopMastersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMastersModel.swift; sourceTree = "<group>"; };
+		1F912A112B9E4C6500B6F07B /* TopMastersNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMastersNetworkManager.swift; sourceTree = "<group>"; };
+		1F912A132B9E4C9A00B6F07B /* TopMastersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMastersViewModel.swift; sourceTree = "<group>"; };
 		1FC6FA082B2DAA3F00561BD4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1FC6FA0A2B2DAC4000561BD4 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		1FC6FA0C2B2DACDF00561BD4 /* AuthNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkManager.swift; sourceTree = "<group>"; };
@@ -245,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				1F912A082B9E193A00B6F07B /* TotalCostNetworkManager.swift */,
+				1F912A112B9E4C6500B6F07B /* TopMastersNetworkManager.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -253,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				1F912A052B9E18FE00B6F07B /* TotalCostModel.swift */,
+				1F912A0F2B9E4BDC00B6F07B /* TopMastersModel.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -271,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				1F912A0D2B9E1CBE00B6F07B /* TotalCostViewModel.swift */,
+				1F912A132B9E4C9A00B6F07B /* TopMastersViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -433,6 +442,7 @@
 				1F9129FE2B9E152A00B6F07B /* StatistikaView.swift in Sources */,
 				1F912A062B9E18FE00B6F07B /* TotalCostModel.swift in Sources */,
 				1F8278412B1A3FFB008F45B8 /* EditServiceView.swift in Sources */,
+				1F912A102B9E4BDC00B6F07B /* TopMastersModel.swift in Sources */,
 				1F8278492B1A534D008F45B8 /* EditCarView.swift in Sources */,
 				1FCFA6F12B13DD6A00B8C198 /* EditMasterView.swift in Sources */,
 				1F8278512B1AAC12008F45B8 /* SpravochnikiHomeView.swift in Sources */,
@@ -442,6 +452,8 @@
 				1FC6FA0B2B2DAC4000561BD4 /* LoginRequest.swift in Sources */,
 				1F912A032B9E169700B6F07B /* TopMastersView.swift in Sources */,
 				1FC6FA0D2B2DACDF00561BD4 /* AuthNetworkManager.swift in Sources */,
+				1F912A122B9E4C6500B6F07B /* TopMastersNetworkManager.swift in Sources */,
+				1F912A142B9E4C9A00B6F07B /* TopMastersViewModel.swift in Sources */,
 				1F7635C82AE86D3800D2A8FB /* AutoServiceERP_FrontendApp.swift in Sources */,
 				1F82784B2B1A8F19008F45B8 /* NaznachenieRabotView.swift in Sources */,
 				1F8278452B1A4D1F008F45B8 /* CarNetworkManager.swift in Sources */,

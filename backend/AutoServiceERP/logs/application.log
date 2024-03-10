@@ -5179,3 +5179,842 @@ java.text.ParseException: Unparseable date: "2022-03-10T17:36:31.257+00:00"
 2024-03-10T21:59:35.958+03:00  INFO 23642 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-03-10T21:59:35.966+03:00  INFO 23642 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-03-10T21:59:35.969+03:00  INFO 23642 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-10T22:02:56.349+03:00  INFO 23890 --- [restartedMain] c.s.A.AutoServiceErpApplication          : Starting AutoServiceErpApplication using Java 17.0.8.1 with PID 23890 (/Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP/build/classes/java/main started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T22:02:56.351+03:00  INFO 23890 --- [restartedMain] c.s.A.AutoServiceErpApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-03-10T22:02:56.367+03:00  INFO 23890 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-10T22:02:56.368+03:00  INFO 23890 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-10T22:02:56.606+03:00  INFO 23890 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T22:02:56.628+03:00  INFO 23890 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
+2024-03-10T22:02:56.858+03:00  INFO 23890 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-03-10T22:02:56.863+03:00  INFO 23890 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-10T22:02:56.863+03:00  INFO 23890 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-03-10T22:02:56.887+03:00  INFO 23890 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-10T22:02:56.887+03:00  INFO 23890 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 519 ms
+2024-03-10T22:02:56.954+03:00  INFO 23890 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T22:02:56.978+03:00  INFO 23890 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-10T22:02:56.979+03:00  INFO 23890 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-10T22:02:57.075+03:00  INFO 23890 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T22:02:57.084+03:00  INFO 23890 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-10T22:02:57.204+03:00  INFO 23890 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5e679864
+2024-03-10T22:02:57.204+03:00  INFO 23890 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-10T22:02:57.223+03:00  WARN 23890 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T22:02:57.546+03:00  INFO 23890 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T22:02:57.657+03:00  INFO 23890 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:02:57.819+03:00  INFO 23890 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-10T22:02:57.995+03:00  WARN 23890 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T22:02:58.114+03:00  INFO 23890 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-10T22:02:58.126+03:00  INFO 23890 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-03-10T22:02:58.130+03:00  INFO 23890 --- [restartedMain] c.s.A.AutoServiceErpApplication          : Started AutoServiceErpApplication in 1.946 seconds (process running for 2.189)
+2024-03-10T22:03:01.306+03:00  INFO 23890 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-10T22:03:01.307+03:00  INFO 23890 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-10T22:03:01.311+03:00  INFO 23890 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-03-10T22:03:41.818+03:00  INFO 23928 --- [Test worker] c.s.A.i.c.AuthControllerIntegrationTest  : Starting AuthControllerIntegrationTest using Java 17.0.8.1 with PID 23928 (started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T22:03:41.819+03:00  INFO 23928 --- [Test worker] c.s.A.i.c.AuthControllerIntegrationTest  : The following 1 profile is active: "test"
+2024-03-10T22:03:42.127+03:00  INFO 23928 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T22:03:42.155+03:00  INFO 23928 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 5 JPA repository interfaces.
+2024-03-10T22:03:42.343+03:00  INFO 23928 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T22:03:42.369+03:00  INFO 23928 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-10T22:03:42.370+03:00  INFO 23928 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-10T22:03:42.476+03:00  INFO 23928 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T22:03:42.490+03:00  INFO 23928 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-10T22:03:42.606+03:00  INFO 23928 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@31531d0d
+2024-03-10T22:03:42.607+03:00  INFO 23928 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-10T22:03:42.626+03:00  WARN 23928 --- [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T22:03:42.966+03:00  INFO 23928 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T22:03:43.032+03:00  INFO 23928 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:03:43.209+03:00  INFO 23928 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-10T22:03:43.477+03:00  WARN 23928 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T22:03:43.623+03:00  INFO 23928 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:43.623+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:43.624+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-10T22:03:43.633+03:00  INFO 23928 --- [Test worker] c.s.A.i.c.AuthControllerIntegrationTest  : Started AuthControllerIntegrationTest in 1.941 seconds (process running for 7.259)
+2024-03-10T22:03:44.578+03:00  INFO 23928 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safroalex.AutoServiceERP.integration.controller.CarControllerIntegrationTest]: CarControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-10T22:03:44.582+03:00  INFO 23928 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safroalex.AutoServiceERP.AutoServiceErpApplication for test class com.safroalex.AutoServiceERP.integration.controller.CarControllerIntegrationTest
+2024-03-10T22:03:44.585+03:00  INFO 23928 --- [Test worker] tc.postgres:latest                       : Creating container for image: postgres:latest
+2024-03-10T22:03:44.611+03:00  INFO 23928 --- [Test worker] tc.postgres:latest                       : Container postgres:latest is starting: fee46e8f6102eaedbb608265e3cfdaf065c33d1c6aa114e54638ffc0697dc901
+2024-03-10T22:03:45.421+03:00  INFO 23928 --- [Test worker] tc.postgres:latest                       : Container postgres:latest started in PT0.835575S
+2024-03-10T22:03:45.424+03:00  INFO 23928 --- [Test worker] tc.postgres:latest                       : Container is started (JDBC URL: jdbc:postgresql://localhost:60130/testdb?loggerLevel=OFF)
+2024-03-10T22:03:45.486+03:00  INFO 23928 --- [Test worker] c.s.A.i.c.CarControllerIntegrationTest   : Starting CarControllerIntegrationTest using Java 17.0.8.1 with PID 23928 (started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T22:03:45.487+03:00  INFO 23928 --- [Test worker] c.s.A.i.c.CarControllerIntegrationTest   : The following 1 profile is active: "test"
+2024-03-10T22:03:45.671+03:00  INFO 23928 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T22:03:45.678+03:00  INFO 23928 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 5 JPA repository interfaces.
+2024-03-10T22:03:45.713+03:00  INFO 23928 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T22:03:45.716+03:00  INFO 23928 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T22:03:45.716+03:00  INFO 23928 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-03-10T22:03:45.736+03:00  INFO 23928 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@128acee
+2024-03-10T22:03:45.736+03:00  INFO 23928 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-03-10T22:03:45.739+03:00  WARN 23928 --- [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T22:03:45.768+03:00  INFO 23928 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T22:03:45.795+03:00  INFO 23928 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:03:45.869+03:00  WARN 23928 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T22:03:45.924+03:00  INFO 23928 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:45.925+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:45.925+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:03:45.928+03:00  INFO 23928 --- [Test worker] c.s.A.i.c.CarControllerIntegrationTest   : Started CarControllerIntegrationTest in 0.491 seconds (process running for 9.555)
+2024-03-10T22:03:46.293+03:00  INFO 23928 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safroalex.AutoServiceERP.integration.controller.MasterControllerIntegrationTest]: MasterControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-10T22:03:46.295+03:00  INFO 23928 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safroalex.AutoServiceERP.AutoServiceErpApplication for test class com.safroalex.AutoServiceERP.integration.controller.MasterControllerIntegrationTest
+2024-03-10T22:03:46.296+03:00  INFO 23928 --- [Test worker] tc.postgres:latest                       : Creating container for image: postgres:latest
+2024-03-10T22:03:46.319+03:00  INFO 23928 --- [Test worker] tc.postgres:latest                       : Container postgres:latest is starting: 0ae68d55a3353c323310b3ef2213d8d56cfc50360c5f10b690396dbfe0a51ee6
+2024-03-10T22:03:47.169+03:00  INFO 23928 --- [Test worker] tc.postgres:latest                       : Container postgres:latest started in PT0.873261S
+2024-03-10T22:03:47.170+03:00  INFO 23928 --- [Test worker] tc.postgres:latest                       : Container is started (JDBC URL: jdbc:postgresql://localhost:60141/testdb?loggerLevel=OFF)
+2024-03-10T22:03:47.186+03:00  INFO 23928 --- [Test worker] .s.A.i.c.MasterControllerIntegrationTest : Starting MasterControllerIntegrationTest using Java 17.0.8.1 with PID 23928 (started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T22:03:47.186+03:00  INFO 23928 --- [Test worker] .s.A.i.c.MasterControllerIntegrationTest : The following 1 profile is active: "test"
+2024-03-10T22:03:47.252+03:00  INFO 23928 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T22:03:47.257+03:00  INFO 23928 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 5 JPA repository interfaces.
+2024-03-10T22:03:47.286+03:00  INFO 23928 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T22:03:47.294+03:00  INFO 23928 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T22:03:47.295+03:00  INFO 23928 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-03-10T22:03:47.318+03:00  INFO 23928 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@1c8ab147
+2024-03-10T22:03:47.318+03:00  INFO 23928 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-03-10T22:03:47.321+03:00  WARN 23928 --- [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T22:03:47.349+03:00  INFO 23928 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T22:03:47.376+03:00  INFO 23928 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:03:47.431+03:00  WARN 23928 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T22:03:47.461+03:00  INFO 23928 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:47.462+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:47.462+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:03:47.464+03:00  INFO 23928 --- [Test worker] .s.A.i.c.MasterControllerIntegrationTest : Started MasterControllerIntegrationTest in 0.29 seconds (process running for 11.091)
+2024-03-10T22:03:47.719+03:00  INFO 23928 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safroalex.AutoServiceERP.integration.controller.ServiceControllerIntegrationTest]: ServiceControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-10T22:03:47.722+03:00  INFO 23928 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safroalex.AutoServiceERP.AutoServiceErpApplication for test class com.safroalex.AutoServiceERP.integration.controller.ServiceControllerIntegrationTest
+2024-03-10T22:03:47.723+03:00  INFO 23928 --- [Test worker] tc.postgres:latest                       : Creating container for image: postgres:latest
+2024-03-10T22:03:47.741+03:00  INFO 23928 --- [Test worker] tc.postgres:latest                       : Container postgres:latest is starting: 3a411806b4d0229afd5ffad4f84271caffb9a4a00023a5dc52ce40904d3811fc
+2024-03-10T22:03:48.547+03:00  INFO 23928 --- [Test worker] tc.postgres:latest                       : Container postgres:latest started in PT0.823616S
+2024-03-10T22:03:48.552+03:00  INFO 23928 --- [Test worker] tc.postgres:latest                       : Container is started (JDBC URL: jdbc:postgresql://localhost:60151/testdb?loggerLevel=OFF)
+2024-03-10T22:03:48.585+03:00  INFO 23928 --- [Test worker] s.A.i.c.ServiceControllerIntegrationTest : Starting ServiceControllerIntegrationTest using Java 17.0.8.1 with PID 23928 (started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T22:03:48.585+03:00  INFO 23928 --- [Test worker] s.A.i.c.ServiceControllerIntegrationTest : The following 1 profile is active: "test"
+2024-03-10T22:03:48.646+03:00  INFO 23928 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T22:03:48.651+03:00  INFO 23928 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 5 JPA repository interfaces.
+2024-03-10T22:03:48.674+03:00  INFO 23928 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T22:03:48.677+03:00  INFO 23928 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T22:03:48.678+03:00  INFO 23928 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-03-10T22:03:48.693+03:00  INFO 23928 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@6c85dbe8
+2024-03-10T22:03:48.693+03:00  INFO 23928 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-03-10T22:03:48.696+03:00  WARN 23928 --- [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T22:03:48.723+03:00  INFO 23928 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T22:03:48.748+03:00  INFO 23928 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:03:48.804+03:00  WARN 23928 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T22:03:48.831+03:00  INFO 23928 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:48.831+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:48.831+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:03:48.833+03:00  INFO 23928 --- [Test worker] s.A.i.c.ServiceControllerIntegrationTest : Started ServiceControllerIntegrationTest in 0.268 seconds (process running for 12.46)
+2024-03-10T22:03:49.069+03:00  INFO 23928 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safroalex.AutoServiceERP.integration.controller.WorkControllerIntegrationTest]: WorkControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-10T22:03:49.072+03:00  INFO 23928 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safroalex.AutoServiceERP.AutoServiceErpApplication for test class com.safroalex.AutoServiceERP.integration.controller.WorkControllerIntegrationTest
+2024-03-10T22:03:49.073+03:00  INFO 23928 --- [Test worker] tc.postgres:latest                       : Creating container for image: postgres:latest
+2024-03-10T22:03:49.098+03:00  INFO 23928 --- [Test worker] tc.postgres:latest                       : Container postgres:latest is starting: 963610f199bf78410a65eaf2f7db5c3b4c275c26330d0679e55d2915805064ea
+2024-03-10T22:03:49.906+03:00  INFO 23928 --- [Test worker] tc.postgres:latest                       : Container postgres:latest started in PT0.83297S
+2024-03-10T22:03:49.907+03:00  INFO 23928 --- [Test worker] tc.postgres:latest                       : Container is started (JDBC URL: jdbc:postgresql://localhost:60164/testdb?loggerLevel=OFF)
+2024-03-10T22:03:49.925+03:00  INFO 23928 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Starting WorkControllerIntegrationTest using Java 17.0.8.1 with PID 23928 (started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T22:03:49.925+03:00  INFO 23928 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : The following 1 profile is active: "test"
+2024-03-10T22:03:49.975+03:00  INFO 23928 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T22:03:49.979+03:00  INFO 23928 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 5 JPA repository interfaces.
+2024-03-10T22:03:49.999+03:00  INFO 23928 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T22:03:50.001+03:00  INFO 23928 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T22:03:50.002+03:00  INFO 23928 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-03-10T22:03:50.018+03:00  INFO 23928 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@41a21205
+2024-03-10T22:03:50.018+03:00  INFO 23928 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-03-10T22:03:50.022+03:00  WARN 23928 --- [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T22:03:50.047+03:00  INFO 23928 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T22:03:50.062+03:00  INFO 23928 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:03:50.109+03:00  WARN 23928 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T22:03:50.136+03:00  INFO 23928 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:50.137+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:50.137+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:03:50.139+03:00  INFO 23928 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Started WorkControllerIntegrationTest in 0.228 seconds (process running for 13.766)
+2024-03-10T22:03:50.542+03:00  INFO 23928 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:50.543+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:50.544+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-10T22:03:50.584+03:00  INFO 23928 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:50.585+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:50.585+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:03:50.626+03:00  INFO 23928 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:50.626+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:50.627+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:03:50.640+03:00  INFO 23928 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:50.640+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:50.641+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:03:50.649+03:00  INFO 23928 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:50.649+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:50.649+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:03:50.655+03:00  INFO 23928 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:50.655+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:50.656+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-10T22:03:50.665+03:00  INFO 23928 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:50.665+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:50.665+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:03:50.691+03:00  INFO 23928 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:50.691+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:50.691+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:03:50.697+03:00  INFO 23928 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:50.697+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:50.698+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-10T22:03:50.703+03:00  INFO 23928 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:50.704+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:50.704+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:03:50.709+03:00  INFO 23928 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:50.709+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:50.709+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:03:50.730+03:00  INFO 23928 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:50.730+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:50.730+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:03:50.739+03:00  INFO 23928 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:50.739+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:50.739+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:03:50.746+03:00  INFO 23928 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:50.746+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:50.746+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:03:50.750+03:00  INFO 23928 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:03:50.750+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:03:50.750+03:00  INFO 23928 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:03:50.766+03:00  INFO 23928 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:03:50.767+03:00  INFO 23928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-10T22:03:50.769+03:00  INFO 23928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-10T22:03:50.772+03:00  INFO 23928 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:03:50.772+03:00  INFO 23928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-03-10T22:03:50.773+03:00  INFO 23928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-03-10T22:03:50.775+03:00  INFO 23928 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:03:50.775+03:00  INFO 23928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-03-10T22:03:52.701+03:00  INFO 23928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-03-10T22:03:52.705+03:00  INFO 23928 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:03:52.706+03:00  INFO 23928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-03-10T22:03:54.044+03:00  INFO 23928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-03-10T22:03:54.047+03:00  INFO 23928 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:03:54.047+03:00  INFO 23928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-03-10T22:03:55.377+03:00  INFO 23928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-03-10T22:40:33.831+03:00  INFO 23890 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:40:33.856+03:00  INFO 23890 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-10T22:40:33.859+03:00  INFO 23890 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-10T22:40:38.400+03:00  INFO 24823 --- [restartedMain] c.s.A.AutoServiceErpApplication          : Starting AutoServiceErpApplication using Java 17.0.8.1 with PID 24823 (/Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP/build/classes/java/main started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T22:40:38.401+03:00  INFO 24823 --- [restartedMain] c.s.A.AutoServiceErpApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-03-10T22:40:38.420+03:00  INFO 24823 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-10T22:40:38.420+03:00  INFO 24823 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-10T22:40:38.639+03:00  INFO 24823 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T22:40:38.666+03:00  INFO 24823 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 5 JPA repository interfaces.
+2024-03-10T22:40:38.902+03:00  INFO 24823 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-03-10T22:40:38.910+03:00  INFO 24823 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-10T22:40:38.910+03:00  INFO 24823 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-03-10T22:40:38.937+03:00  INFO 24823 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-10T22:40:38.938+03:00  INFO 24823 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 518 ms
+2024-03-10T22:40:39.002+03:00  INFO 24823 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T22:40:39.025+03:00  INFO 24823 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-10T22:40:39.026+03:00  INFO 24823 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-10T22:40:39.134+03:00  INFO 24823 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T22:40:39.144+03:00  INFO 24823 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-10T22:40:39.268+03:00  INFO 24823 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@278dc308
+2024-03-10T22:40:39.268+03:00  INFO 24823 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-10T22:40:39.287+03:00  WARN 24823 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T22:40:39.621+03:00  INFO 24823 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T22:40:39.738+03:00  INFO 24823 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:40:39.905+03:00  INFO 24823 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-10T22:40:40.092+03:00  WARN 24823 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T22:40:40.412+03:00  INFO 24823 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-10T22:40:40.435+03:00  INFO 24823 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-03-10T22:40:40.445+03:00  INFO 24823 --- [restartedMain] c.s.A.AutoServiceErpApplication          : Started AutoServiceErpApplication in 2.21 seconds (process running for 2.469)
+2024-03-10T22:40:50.044+03:00  INFO 24823 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-10T22:40:50.045+03:00  INFO 24823 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-10T22:40:50.048+03:00  INFO 24823 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-03-10T22:41:41.291+03:00  INFO 24851 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Starting WorkControllerIntegrationTest using Java 17.0.8.1 with PID 24851 (started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T22:41:41.292+03:00  INFO 24851 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : The following 1 profile is active: "test"
+2024-03-10T22:41:41.537+03:00  INFO 24851 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T22:41:41.560+03:00  INFO 24851 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 5 JPA repository interfaces.
+2024-03-10T22:41:41.728+03:00  INFO 24851 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T22:41:41.754+03:00  INFO 24851 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-10T22:41:41.755+03:00  INFO 24851 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-10T22:41:41.872+03:00  INFO 24851 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T22:41:41.886+03:00  INFO 24851 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-10T22:41:41.996+03:00  INFO 24851 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@22ff11ef
+2024-03-10T22:41:41.997+03:00  INFO 24851 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-10T22:41:42.014+03:00  WARN 24851 --- [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T22:41:42.352+03:00  INFO 24851 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T22:41:42.402+03:00  INFO 24851 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:41:42.582+03:00  INFO 24851 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-10T22:41:42.899+03:00  WARN 24851 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T22:41:43.068+03:00  INFO 24851 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:41:43.068+03:00  INFO 24851 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:41:43.068+03:00  INFO 24851 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:41:43.077+03:00  INFO 24851 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Started WorkControllerIntegrationTest in 1.926 seconds (process running for 7.636)
+2024-03-10T22:41:43.794+03:00  INFO 24851 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:41:43.795+03:00  INFO 24851 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-10T22:41:43.797+03:00  INFO 24851 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-10T22:47:00.858+03:00  INFO 24823 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:47:00.928+03:00  INFO 24823 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-10T22:47:00.938+03:00  INFO 24823 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-10T22:47:09.000+03:00  INFO 25050 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Starting WorkControllerIntegrationTest using Java 17.0.8.1 with PID 25050 (started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T22:47:09.000+03:00  INFO 25050 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : The following 1 profile is active: "test"
+2024-03-10T22:47:09.227+03:00  INFO 25050 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T22:47:09.249+03:00  INFO 25050 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
+2024-03-10T22:47:09.424+03:00  INFO 25050 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T22:47:09.448+03:00  INFO 25050 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-10T22:47:09.449+03:00  INFO 25050 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-10T22:47:09.550+03:00  INFO 25050 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T22:47:09.561+03:00  INFO 25050 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-10T22:47:09.682+03:00  INFO 25050 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@59b3f754
+2024-03-10T22:47:09.683+03:00  INFO 25050 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-10T22:47:09.699+03:00  WARN 25050 --- [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T22:47:10.040+03:00  INFO 25050 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T22:47:10.085+03:00  INFO 25050 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:47:10.271+03:00  INFO 25050 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-10T22:47:10.539+03:00  WARN 25050 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T22:47:10.664+03:00  INFO 25050 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:47:10.665+03:00  INFO 25050 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:47:10.665+03:00  INFO 25050 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:47:10.674+03:00  INFO 25050 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Started WorkControllerIntegrationTest in 1.79 seconds (process running for 4.113)
+2024-03-10T22:47:11.008+03:00 ERROR 25050 --- [Test worker] c.s.A.controller.WorkController          : Error retrieving total cost
+
+org.springframework.dao.InvalidDataAccessApiUsageException: Argument [2023-01-01T00:00:00Z] of type [java.time.Instant] did not match parameter type [java.time.OffsetDateTime (n/a)]
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:371) ~[spring-orm-6.0.13.jar:6.0.13]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:234) ~[spring-orm-6.0.13.jar:6.0.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550) ~[spring-orm-6.0.13.jar:6.0.13]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:243) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:244) ~[spring-aop-6.0.13.jar:6.0.13]
+	at jdk.proxy3/jdk.proxy3.$Proxy143.sumTotalCost(Unknown Source) ~[na:na]
+	at com.safroalex.AutoServiceERP.service.WorkService.getTotalCost(WorkService.java:70) ~[main/:na]
+	at com.safroalex.AutoServiceERP.controller.WorkController.getTotalCost(WorkController.java:73) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.15.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72) ~[spring-test-6.0.13.jar:6.0.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.15.jar:6.0]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165) ~[spring-test-6.0.13.jar:6.0.13]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.0.13.jar:6.0.13]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201) ~[spring-test-6.0.13.jar:6.0.13]
+	at com.safroalex.AutoServiceERP.integration.controller.WorkControllerIntegrationTest.getTotalCostForPeriodTest(WorkControllerIntegrationTest.java:150) ~[test/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727) ~[junit-platform-commons-1.9.3.jar:1.9.3]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+Caused by: java.lang.IllegalArgumentException: Argument [2023-01-01T00:00:00Z] of type [java.time.Instant] did not match parameter type [java.time.OffsetDateTime (n/a)]
+	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:84) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:31) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.internal.QueryParameterBindingImpl.validate(QueryParameterBindingImpl.java:340) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.internal.QueryParameterBindingImpl.setBindValue(QueryParameterBindingImpl.java:130) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.spi.AbstractCommonQueryContract.setParameter(AbstractCommonQueryContract.java:825) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.setParameter(AbstractSelectionQuery.java:780) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.setParameter(QuerySqmImpl.java:1237) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.setParameter(QuerySqmImpl.java:129) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$BindableQuery.setParameter(QueryParameterSetter.java:326) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.lambda$setParameter$4(QueryParameterSetter.java:117) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$ErrorHandling$1.execute(QueryParameterSetter.java:140) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.setParameter(QueryParameterSetter.java:117) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:84) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:76) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bindAndPrepare(ParameterBinder.java:98) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.data.jpa.repository.query.AbstractStringBasedJpaQuery.doCreateQuery(AbstractStringBasedJpaQuery.java:106) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.createQuery(AbstractJpaQuery.java:239) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:223) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:149) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:137) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:136) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:120) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:72) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.0.13.jar:6.0.13]
+	... 124 common frames omitted
+
+2024-03-10T22:47:11.316+03:00  INFO 25050 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:47:11.318+03:00  INFO 25050 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-10T22:47:11.319+03:00  INFO 25050 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-10T22:47:44.590+03:00  INFO 25098 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Starting WorkControllerIntegrationTest using Java 17.0.8.1 with PID 25098 (started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T22:47:44.592+03:00  INFO 25098 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : The following 1 profile is active: "test"
+2024-03-10T22:47:44.830+03:00  INFO 25098 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T22:47:44.853+03:00  INFO 25098 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
+2024-03-10T22:47:45.018+03:00  INFO 25098 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T22:47:45.043+03:00  INFO 25098 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-10T22:47:45.044+03:00  INFO 25098 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-10T22:47:45.142+03:00  INFO 25098 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T22:47:45.152+03:00  INFO 25098 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-10T22:47:45.246+03:00  INFO 25098 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1d654b5f
+2024-03-10T22:47:45.247+03:00  INFO 25098 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-10T22:47:45.280+03:00  WARN 25098 --- [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T22:47:45.629+03:00  INFO 25098 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T22:47:45.689+03:00  INFO 25098 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:47:45.879+03:00  INFO 25098 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-10T22:47:46.150+03:00  WARN 25098 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T22:47:46.287+03:00  INFO 25098 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:47:46.288+03:00  INFO 25098 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:47:46.288+03:00  INFO 25098 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:47:46.297+03:00  INFO 25098 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Started WorkControllerIntegrationTest in 1.842 seconds (process running for 4.615)
+2024-03-10T22:47:46.975+03:00  INFO 25098 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:47:46.977+03:00  INFO 25098 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-10T22:47:46.979+03:00  INFO 25098 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-10T22:47:58.267+03:00  INFO 25131 --- [restartedMain] c.s.A.AutoServiceErpApplication          : Starting AutoServiceErpApplication using Java 17.0.8.1 with PID 25131 (/Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP/build/classes/java/main started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T22:47:58.268+03:00  INFO 25131 --- [restartedMain] c.s.A.AutoServiceErpApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-03-10T22:47:58.284+03:00  INFO 25131 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-10T22:47:58.284+03:00  INFO 25131 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-10T22:47:58.497+03:00  INFO 25131 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T22:47:58.518+03:00  INFO 25131 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2024-03-10T22:47:58.736+03:00  INFO 25131 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-03-10T22:47:58.741+03:00  INFO 25131 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-10T22:47:58.741+03:00  INFO 25131 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-03-10T22:47:58.763+03:00  INFO 25131 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-10T22:47:58.764+03:00  INFO 25131 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 479 ms
+2024-03-10T22:47:58.820+03:00  INFO 25131 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T22:47:58.843+03:00  INFO 25131 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-10T22:47:58.844+03:00  INFO 25131 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-10T22:47:58.931+03:00  INFO 25131 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T22:47:58.940+03:00  INFO 25131 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-10T22:47:59.054+03:00  INFO 25131 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@521ffacd
+2024-03-10T22:47:59.054+03:00  INFO 25131 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-10T22:47:59.073+03:00  WARN 25131 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T22:47:59.399+03:00  INFO 25131 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T22:47:59.514+03:00  INFO 25131 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:47:59.694+03:00  INFO 25131 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-10T22:47:59.863+03:00  WARN 25131 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T22:47:59.972+03:00  INFO 25131 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-10T22:47:59.985+03:00  INFO 25131 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-03-10T22:47:59.990+03:00  INFO 25131 --- [restartedMain] c.s.A.AutoServiceErpApplication          : Started AutoServiceErpApplication in 1.86 seconds (process running for 2.021)
+2024-03-10T22:48:01.877+03:00  INFO 25131 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:48:01.885+03:00  INFO 25131 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-10T22:48:01.888+03:00  INFO 25131 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-10T22:48:19.989+03:00  INFO 25147 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Starting WorkControllerIntegrationTest using Java 17.0.8.1 with PID 25147 (started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T22:48:19.989+03:00  INFO 25147 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : The following 1 profile is active: "test"
+2024-03-10T22:48:20.211+03:00  INFO 25147 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T22:48:20.234+03:00  INFO 25147 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
+2024-03-10T22:48:20.405+03:00  INFO 25147 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T22:48:20.439+03:00  INFO 25147 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-10T22:48:20.440+03:00  INFO 25147 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-10T22:48:20.536+03:00  INFO 25147 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T22:48:20.546+03:00  INFO 25147 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-10T22:48:20.642+03:00  INFO 25147 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@51f4439e
+2024-03-10T22:48:20.643+03:00  INFO 25147 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-10T22:48:20.669+03:00  WARN 25147 --- [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T22:48:20.996+03:00  INFO 25147 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T22:48:21.040+03:00  INFO 25147 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:48:21.210+03:00  INFO 25147 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-10T22:48:21.478+03:00  WARN 25147 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T22:48:21.601+03:00  INFO 25147 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:48:21.601+03:00  INFO 25147 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:48:21.602+03:00  INFO 25147 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:48:21.610+03:00  INFO 25147 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Started WorkControllerIntegrationTest in 1.733 seconds (process running for 3.637)
+2024-03-10T22:48:22.210+03:00  INFO 25147 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:48:22.211+03:00  INFO 25147 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-10T22:48:22.214+03:00  INFO 25147 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-10T22:50:25.591+03:00  INFO 25220 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Starting WorkControllerIntegrationTest using Java 17.0.8.1 with PID 25220 (started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T22:50:25.591+03:00  INFO 25220 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : The following 1 profile is active: "test"
+2024-03-10T22:50:25.820+03:00  INFO 25220 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T22:50:25.843+03:00  INFO 25220 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 5 JPA repository interfaces.
+2024-03-10T22:50:26.022+03:00  INFO 25220 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T22:50:26.047+03:00  INFO 25220 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-10T22:50:26.048+03:00  INFO 25220 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-10T22:50:26.149+03:00  INFO 25220 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T22:50:26.159+03:00  INFO 25220 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-10T22:50:26.255+03:00  INFO 25220 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@8315e4a
+2024-03-10T22:50:26.256+03:00  INFO 25220 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-10T22:50:26.275+03:00  WARN 25220 --- [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T22:50:26.678+03:00  INFO 25220 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T22:50:26.733+03:00  INFO 25220 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:50:26.905+03:00  INFO 25220 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-10T22:50:27.174+03:00  WARN 25220 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T22:50:27.306+03:00  INFO 25220 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:50:27.306+03:00  INFO 25220 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:50:27.307+03:00  INFO 25220 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:50:27.317+03:00  INFO 25220 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Started WorkControllerIntegrationTest in 1.851 seconds (process running for 4.033)
+2024-03-10T22:50:28.083+03:00  INFO 25220 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:50:28.084+03:00  INFO 25220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-10T22:50:28.086+03:00  INFO 25220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-10T22:50:33.034+03:00  INFO 25233 --- [restartedMain] c.s.A.AutoServiceErpApplication          : Starting AutoServiceErpApplication using Java 17.0.8.1 with PID 25233 (/Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP/build/classes/java/main started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T22:50:33.035+03:00  INFO 25233 --- [restartedMain] c.s.A.AutoServiceErpApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-03-10T22:50:33.051+03:00  INFO 25233 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-10T22:50:33.051+03:00  INFO 25233 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-10T22:50:33.258+03:00  INFO 25233 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T22:50:33.285+03:00  INFO 25233 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 5 JPA repository interfaces.
+2024-03-10T22:50:33.544+03:00  INFO 25233 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-03-10T22:50:33.549+03:00  INFO 25233 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-10T22:50:33.549+03:00  INFO 25233 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-03-10T22:50:33.572+03:00  INFO 25233 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-10T22:50:33.572+03:00  INFO 25233 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 521 ms
+2024-03-10T22:50:33.723+03:00  INFO 25233 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T22:50:33.770+03:00  INFO 25233 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-10T22:50:33.772+03:00  INFO 25233 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-10T22:50:33.928+03:00  INFO 25233 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T22:50:33.938+03:00  INFO 25233 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-10T22:50:34.065+03:00  INFO 25233 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@779f8a6a
+2024-03-10T22:50:34.066+03:00  INFO 25233 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-10T22:50:34.098+03:00  WARN 25233 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T22:50:34.507+03:00  INFO 25233 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T22:50:34.621+03:00  INFO 25233 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:50:34.837+03:00  INFO 25233 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-10T22:50:35.039+03:00  WARN 25233 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T22:50:35.153+03:00  INFO 25233 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-10T22:50:35.167+03:00  INFO 25233 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-03-10T22:50:35.171+03:00  INFO 25233 --- [restartedMain] c.s.A.AutoServiceErpApplication          : Started AutoServiceErpApplication in 2.277 seconds (process running for 2.443)
+2024-03-10T22:50:37.740+03:00  INFO 25233 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-10T22:50:37.741+03:00  INFO 25233 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-10T22:50:37.744+03:00  INFO 25233 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-03-10T22:52:59.890+03:00  INFO 25280 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Starting WorkControllerIntegrationTest using Java 17.0.8.1 with PID 25280 (started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T22:52:59.891+03:00  INFO 25280 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : The following 1 profile is active: "test"
+2024-03-10T22:53:00.204+03:00  INFO 25280 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T22:53:00.229+03:00  INFO 25280 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 5 JPA repository interfaces.
+2024-03-10T22:53:00.407+03:00  INFO 25280 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T22:53:00.432+03:00  INFO 25280 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-10T22:53:00.433+03:00  INFO 25280 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-10T22:53:00.539+03:00  INFO 25280 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T22:53:00.550+03:00  INFO 25280 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-10T22:53:00.659+03:00  INFO 25280 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1b36d248
+2024-03-10T22:53:00.660+03:00  INFO 25280 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-10T22:53:00.679+03:00  WARN 25280 --- [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T22:53:01.024+03:00  INFO 25280 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T22:53:01.081+03:00  INFO 25280 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:53:01.259+03:00  INFO 25280 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-10T22:53:01.528+03:00  WARN 25280 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T22:53:01.655+03:00  INFO 25280 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-10T22:53:01.656+03:00  INFO 25280 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T22:53:01.656+03:00  INFO 25280 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T22:53:01.665+03:00  INFO 25280 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Started WorkControllerIntegrationTest in 1.901 seconds (process running for 3.99)
+2024-03-10T22:53:02.369+03:00  INFO 25280 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T22:53:02.370+03:00  INFO 25280 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-10T22:53:02.372+03:00  INFO 25280 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-10T23:20:10.731+03:00  WARN 25233 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.OffsetDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.OffsetDateTime] for value [2022-02-09]]
+2024-03-10T23:20:12.917+03:00  WARN 25233 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.OffsetDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.OffsetDateTime] for value [2022-02-09]]
+2024-03-10T23:20:14.017+03:00  WARN 25233 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.OffsetDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.OffsetDateTime] for value [2022-02-09]]
+2024-03-10T23:20:14.180+03:00  WARN 25233 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.OffsetDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.OffsetDateTime] for value [2022-02-09]]
+2024-03-10T23:20:14.311+03:00  WARN 25233 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.OffsetDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.OffsetDateTime] for value [2022-02-09]]
+2024-03-10T23:20:14.451+03:00  WARN 25233 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.OffsetDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.OffsetDateTime] for value [2022-02-09]]
+2024-03-10T23:20:14.569+03:00  WARN 25233 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.OffsetDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.OffsetDateTime] for value [2022-02-09]]
+2024-03-10T23:20:14.701+03:00  WARN 25233 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.OffsetDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.OffsetDateTime] for value [2022-02-09]]
+2024-03-10T23:20:14.830+03:00  WARN 25233 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.OffsetDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.OffsetDateTime] for value [2022-02-09]]
+2024-03-10T23:20:14.969+03:00  WARN 25233 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.OffsetDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.OffsetDateTime] for value [2022-02-09]]
+2024-03-10T23:20:15.078+03:00  WARN 25233 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.OffsetDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.OffsetDateTime] for value [2022-02-09]]
+2024-03-10T23:22:27.980+03:00  WARN 25233 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.OffsetDateTime'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.OffsetDateTime] for value [2024-02-09]]
+2024-03-10T23:38:46.812+03:00  INFO 25233 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-03-10T23:38:46.859+03:00  INFO 25233 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-03-10T23:38:46.864+03:00  INFO 25233 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-10T23:38:46.879+03:00  INFO 25233 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T23:38:46.890+03:00  INFO 25233 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-10T23:38:46.895+03:00  INFO 25233 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-10T23:38:47.054+03:00  INFO 25233 --- [restartedMain] c.s.A.AutoServiceErpApplication          : Starting AutoServiceErpApplication using Java 17.0.8.1 with PID 25233 (/Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP/build/classes/java/main started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T23:38:47.054+03:00  INFO 25233 --- [restartedMain] c.s.A.AutoServiceErpApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-03-10T23:38:47.189+03:00  INFO 25233 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T23:38:47.207+03:00  INFO 25233 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2024-03-10T23:38:47.276+03:00  INFO 25233 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-03-10T23:38:47.277+03:00  INFO 25233 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-10T23:38:47.277+03:00  INFO 25233 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-03-10T23:38:47.285+03:00  INFO 25233 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-10T23:38:47.286+03:00  INFO 25233 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 228 ms
+2024-03-10T23:38:47.311+03:00  INFO 25233 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T23:38:47.314+03:00  INFO 25233 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T23:38:47.315+03:00  INFO 25233 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-03-10T23:38:47.381+03:00  INFO 25233 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@36976261
+2024-03-10T23:38:47.382+03:00  INFO 25233 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-03-10T23:38:47.390+03:00  WARN 25233 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T23:38:47.475+03:00  INFO 25233 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T23:38:47.574+03:00  INFO 25233 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T23:38:47.670+03:00  WARN 25233 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T23:38:47.719+03:00  INFO 25233 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-10T23:38:47.724+03:00  INFO 25233 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-03-10T23:38:47.726+03:00  INFO 25233 --- [restartedMain] c.s.A.AutoServiceErpApplication          : Started AutoServiceErpApplication in 0.697 seconds (process running for 2894.921)
+2024-03-10T23:38:47.727+03:00  INFO 25233 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-10T23:38:51.048+03:00  INFO 26500 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Starting WorkControllerIntegrationTest using Java 17.0.8.1 with PID 26500 (started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T23:38:51.049+03:00  INFO 26500 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : The following 1 profile is active: "test"
+2024-03-10T23:38:51.362+03:00  INFO 26500 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T23:38:51.392+03:00  INFO 26500 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 5 JPA repository interfaces.
+2024-03-10T23:38:51.587+03:00  INFO 26500 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T23:38:51.611+03:00  INFO 26500 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-10T23:38:51.613+03:00  INFO 26500 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-10T23:38:51.721+03:00  INFO 26500 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T23:38:51.732+03:00  INFO 26500 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-10T23:38:51.837+03:00  INFO 26500 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2a510e0e
+2024-03-10T23:38:51.837+03:00  INFO 26500 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-10T23:38:51.864+03:00  WARN 26500 --- [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T23:38:52.211+03:00  INFO 26500 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T23:38:52.258+03:00  INFO 26500 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T23:38:52.448+03:00  INFO 26500 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-10T23:38:52.744+03:00  WARN 26500 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T23:38:52.878+03:00  INFO 26500 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:38:52.878+03:00  INFO 26500 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:38:52.879+03:00  INFO 26500 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-10T23:38:52.887+03:00  INFO 26500 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Started WorkControllerIntegrationTest in 1.987 seconds (process running for 7.274)
+2024-03-10T23:38:53.678+03:00  INFO 26500 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T23:38:53.681+03:00  INFO 26500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-10T23:38:53.685+03:00  INFO 26500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-10T23:38:54.127+03:00  INFO 25233 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T23:38:54.135+03:00  INFO 25233 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-03-10T23:38:54.140+03:00  INFO 25233 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-03-10T23:39:05.357+03:00  INFO 26543 --- [Test worker] c.s.A.i.c.AuthControllerIntegrationTest  : Starting AuthControllerIntegrationTest using Java 17.0.8.1 with PID 26543 (started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T23:39:05.358+03:00  INFO 26543 --- [Test worker] c.s.A.i.c.AuthControllerIntegrationTest  : The following 1 profile is active: "test"
+2024-03-10T23:39:05.593+03:00  INFO 26543 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T23:39:05.639+03:00  INFO 26543 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 5 JPA repository interfaces.
+2024-03-10T23:39:05.794+03:00  INFO 26543 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T23:39:05.814+03:00  INFO 26543 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-10T23:39:05.815+03:00  INFO 26543 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-10T23:39:05.908+03:00  INFO 26543 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T23:39:05.918+03:00  INFO 26543 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-10T23:39:06.020+03:00  INFO 26543 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@10f397d0
+2024-03-10T23:39:06.021+03:00  INFO 26543 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-10T23:39:06.038+03:00  WARN 26543 --- [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T23:39:06.355+03:00  INFO 26543 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T23:39:06.396+03:00  INFO 26543 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T23:39:06.568+03:00  INFO 26543 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-10T23:39:06.835+03:00  WARN 26543 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T23:39:06.962+03:00  INFO 26543 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:06.963+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:06.963+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:06.973+03:00  INFO 26543 --- [Test worker] c.s.A.i.c.AuthControllerIntegrationTest  : Started AuthControllerIntegrationTest in 1.722 seconds (process running for 3.777)
+2024-03-10T23:39:07.682+03:00  INFO 26543 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safroalex.AutoServiceERP.integration.controller.CarControllerIntegrationTest]: CarControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-10T23:39:07.685+03:00  INFO 26543 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safroalex.AutoServiceERP.AutoServiceErpApplication for test class com.safroalex.AutoServiceERP.integration.controller.CarControllerIntegrationTest
+2024-03-10T23:39:07.686+03:00  INFO 26543 --- [Test worker] tc.postgres:latest                       : Creating container for image: postgres:latest
+2024-03-10T23:39:07.705+03:00  INFO 26543 --- [Test worker] tc.postgres:latest                       : Container postgres:latest is starting: 370b378c5b344a24645d26c2600bbe5618f517fbd53bc335628b82c5f7f43be9
+2024-03-10T23:39:08.493+03:00  INFO 26543 --- [Test worker] tc.postgres:latest                       : Container postgres:latest started in PT0.807144S
+2024-03-10T23:39:08.494+03:00  INFO 26543 --- [Test worker] tc.postgres:latest                       : Container is started (JDBC URL: jdbc:postgresql://localhost:61989/testdb?loggerLevel=OFF)
+2024-03-10T23:39:08.510+03:00  INFO 26543 --- [Test worker] c.s.A.i.c.CarControllerIntegrationTest   : Starting CarControllerIntegrationTest using Java 17.0.8.1 with PID 26543 (started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T23:39:08.510+03:00  INFO 26543 --- [Test worker] c.s.A.i.c.CarControllerIntegrationTest   : The following 1 profile is active: "test"
+2024-03-10T23:39:08.593+03:00  INFO 26543 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T23:39:08.599+03:00  INFO 26543 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2024-03-10T23:39:08.631+03:00  INFO 26543 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T23:39:08.633+03:00  INFO 26543 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T23:39:08.633+03:00  INFO 26543 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-03-10T23:39:08.647+03:00  INFO 26543 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@3d74313a
+2024-03-10T23:39:08.647+03:00  INFO 26543 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-03-10T23:39:08.649+03:00  WARN 26543 --- [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T23:39:08.679+03:00  INFO 26543 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T23:39:08.694+03:00  INFO 26543 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T23:39:08.756+03:00  WARN 26543 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T23:39:08.790+03:00  INFO 26543 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:08.790+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:08.790+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:08.793+03:00  INFO 26543 --- [Test worker] c.s.A.i.c.CarControllerIntegrationTest   : Started CarControllerIntegrationTest in 0.296 seconds (process running for 5.598)
+2024-03-10T23:39:09.015+03:00  INFO 26543 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safroalex.AutoServiceERP.integration.controller.MasterControllerIntegrationTest]: MasterControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-10T23:39:09.017+03:00  INFO 26543 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safroalex.AutoServiceERP.AutoServiceErpApplication for test class com.safroalex.AutoServiceERP.integration.controller.MasterControllerIntegrationTest
+2024-03-10T23:39:09.018+03:00  INFO 26543 --- [Test worker] tc.postgres:latest                       : Creating container for image: postgres:latest
+2024-03-10T23:39:09.046+03:00  INFO 26543 --- [Test worker] tc.postgres:latest                       : Container postgres:latest is starting: 92b6900e62c9f340a463baa533a4c6d9bc35a8a24b8e72deeef91cc12e5d8999
+2024-03-10T23:39:09.830+03:00  INFO 26543 --- [Test worker] tc.postgres:latest                       : Container postgres:latest started in PT0.812005S
+2024-03-10T23:39:09.830+03:00  INFO 26543 --- [Test worker] tc.postgres:latest                       : Container is started (JDBC URL: jdbc:postgresql://localhost:62000/testdb?loggerLevel=OFF)
+2024-03-10T23:39:09.860+03:00  INFO 26543 --- [Test worker] .s.A.i.c.MasterControllerIntegrationTest : Starting MasterControllerIntegrationTest using Java 17.0.8.1 with PID 26543 (started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T23:39:09.860+03:00  INFO 26543 --- [Test worker] .s.A.i.c.MasterControllerIntegrationTest : The following 1 profile is active: "test"
+2024-03-10T23:39:09.921+03:00  INFO 26543 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T23:39:09.926+03:00  INFO 26543 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 5 JPA repository interfaces.
+2024-03-10T23:39:09.950+03:00  INFO 26543 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T23:39:09.952+03:00  INFO 26543 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T23:39:09.953+03:00  INFO 26543 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-03-10T23:39:09.977+03:00  INFO 26543 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@54557dd8
+2024-03-10T23:39:09.977+03:00  INFO 26543 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-03-10T23:39:09.980+03:00  WARN 26543 --- [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T23:39:10.008+03:00  INFO 26543 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T23:39:10.035+03:00  INFO 26543 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T23:39:10.100+03:00  WARN 26543 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T23:39:10.132+03:00  INFO 26543 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:10.132+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:10.132+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:10.135+03:00  INFO 26543 --- [Test worker] .s.A.i.c.MasterControllerIntegrationTest : Started MasterControllerIntegrationTest in 0.301 seconds (process running for 6.94)
+2024-03-10T23:39:10.314+03:00  INFO 26543 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safroalex.AutoServiceERP.integration.controller.ServiceControllerIntegrationTest]: ServiceControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-10T23:39:10.316+03:00  INFO 26543 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safroalex.AutoServiceERP.AutoServiceErpApplication for test class com.safroalex.AutoServiceERP.integration.controller.ServiceControllerIntegrationTest
+2024-03-10T23:39:10.316+03:00  INFO 26543 --- [Test worker] tc.postgres:latest                       : Creating container for image: postgres:latest
+2024-03-10T23:39:10.345+03:00  INFO 26543 --- [Test worker] tc.postgres:latest                       : Container postgres:latest is starting: 6b09f22e81b3d81bfce93e4c76048c56092dbd98858b73126b6da7364ee00608
+2024-03-10T23:39:11.150+03:00  INFO 26543 --- [Test worker] tc.postgres:latest                       : Container postgres:latest started in PT0.833943S
+2024-03-10T23:39:11.151+03:00  INFO 26543 --- [Test worker] tc.postgres:latest                       : Container is started (JDBC URL: jdbc:postgresql://localhost:62013/testdb?loggerLevel=OFF)
+2024-03-10T23:39:11.170+03:00  INFO 26543 --- [Test worker] s.A.i.c.ServiceControllerIntegrationTest : Starting ServiceControllerIntegrationTest using Java 17.0.8.1 with PID 26543 (started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T23:39:11.171+03:00  INFO 26543 --- [Test worker] s.A.i.c.ServiceControllerIntegrationTest : The following 1 profile is active: "test"
+2024-03-10T23:39:11.225+03:00  INFO 26543 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T23:39:11.230+03:00  INFO 26543 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 5 JPA repository interfaces.
+2024-03-10T23:39:11.252+03:00  INFO 26543 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T23:39:11.255+03:00  INFO 26543 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T23:39:11.255+03:00  INFO 26543 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-03-10T23:39:11.268+03:00  INFO 26543 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@6f3cbc1f
+2024-03-10T23:39:11.268+03:00  INFO 26543 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-03-10T23:39:11.270+03:00  WARN 26543 --- [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T23:39:11.295+03:00  INFO 26543 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T23:39:11.320+03:00  INFO 26543 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T23:39:11.367+03:00  WARN 26543 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T23:39:11.392+03:00  INFO 26543 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:11.392+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:11.392+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:11.394+03:00  INFO 26543 --- [Test worker] s.A.i.c.ServiceControllerIntegrationTest : Started ServiceControllerIntegrationTest in 0.239 seconds (process running for 8.199)
+2024-03-10T23:39:11.600+03:00  INFO 26543 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safroalex.AutoServiceERP.integration.controller.WorkControllerIntegrationTest]: WorkControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-10T23:39:11.602+03:00  INFO 26543 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safroalex.AutoServiceERP.AutoServiceErpApplication for test class com.safroalex.AutoServiceERP.integration.controller.WorkControllerIntegrationTest
+2024-03-10T23:39:11.603+03:00  INFO 26543 --- [Test worker] tc.postgres:latest                       : Creating container for image: postgres:latest
+2024-03-10T23:39:11.621+03:00  INFO 26543 --- [Test worker] tc.postgres:latest                       : Container postgres:latest is starting: 96d67b61864251397c30e9dbaba35c4a8719e05daf0e8c21b5a892e44161be3c
+2024-03-10T23:39:12.420+03:00  INFO 26543 --- [Test worker] tc.postgres:latest                       : Container postgres:latest started in PT0.817427S
+2024-03-10T23:39:12.421+03:00  INFO 26543 --- [Test worker] tc.postgres:latest                       : Container is started (JDBC URL: jdbc:postgresql://localhost:62026/testdb?loggerLevel=OFF)
+2024-03-10T23:39:12.439+03:00  INFO 26543 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Starting WorkControllerIntegrationTest using Java 17.0.8.1 with PID 26543 (started by anon in /Users/anon/GITREPOS/PERSONAL/B1-PostgreSQLAutoServiceERP/backend/AutoServiceERP)
+2024-03-10T23:39:12.439+03:00  INFO 26543 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : The following 1 profile is active: "test"
+2024-03-10T23:39:12.502+03:00  INFO 26543 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10T23:39:12.508+03:00  INFO 26543 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 5 JPA repository interfaces.
+2024-03-10T23:39:12.535+03:00  INFO 26543 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10T23:39:12.537+03:00  INFO 26543 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-10T23:39:12.537+03:00  INFO 26543 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-03-10T23:39:12.552+03:00  INFO 26543 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@6b102ccf
+2024-03-10T23:39:12.553+03:00  INFO 26543 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-03-10T23:39:12.555+03:00  WARN 26543 --- [Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-10T23:39:12.579+03:00  INFO 26543 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-10T23:39:12.598+03:00  INFO 26543 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T23:39:12.643+03:00  WARN 26543 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-10T23:39:12.667+03:00  INFO 26543 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:12.667+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:12.667+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:12.670+03:00  INFO 26543 --- [Test worker] c.s.A.i.c.WorkControllerIntegrationTest  : Started WorkControllerIntegrationTest in 0.245 seconds (process running for 9.474)
+2024-03-10T23:39:12.974+03:00  INFO 26543 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:12.975+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:12.976+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-10T23:39:13.013+03:00  INFO 26543 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:13.013+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:13.013+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:13.052+03:00  INFO 26543 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:13.053+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:13.053+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:13.063+03:00  INFO 26543 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:13.064+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:13.064+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:13.072+03:00  INFO 26543 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:13.072+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:13.073+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:13.079+03:00  INFO 26543 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:13.079+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:13.079+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:13.089+03:00  INFO 26543 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:13.089+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:13.089+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:13.112+03:00  INFO 26543 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:13.112+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:13.112+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:13.118+03:00  INFO 26543 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:13.119+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:13.119+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:13.125+03:00  INFO 26543 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:13.126+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:13.126+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:13.133+03:00  INFO 26543 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:13.133+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:13.133+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:13.155+03:00  INFO 26543 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:13.155+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:13.155+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:13.165+03:00  INFO 26543 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:13.165+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:13.165+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:13.171+03:00  INFO 26543 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:13.171+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:13.171+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:13.178+03:00  INFO 26543 --- [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-03-10T23:39:13.178+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-10T23:39:13.178+03:00  INFO 26543 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-10T23:39:13.187+03:00  INFO 26543 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T23:39:13.188+03:00  INFO 26543 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-10T23:39:13.190+03:00  INFO 26543 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-10T23:39:13.192+03:00  INFO 26543 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T23:39:13.193+03:00  INFO 26543 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-03-10T23:39:14.013+03:00  INFO 26543 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-03-10T23:39:14.016+03:00  INFO 26543 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T23:39:14.016+03:00  INFO 26543 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-03-10T23:39:15.319+03:00  INFO 26543 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-03-10T23:39:15.325+03:00  INFO 26543 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T23:39:15.326+03:00  INFO 26543 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-03-10T23:39:16.599+03:00  INFO 26543 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-03-10T23:39:16.601+03:00  INFO 26543 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10T23:39:16.601+03:00  INFO 26543 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-03-10T23:39:17.914+03:00  INFO 26543 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.

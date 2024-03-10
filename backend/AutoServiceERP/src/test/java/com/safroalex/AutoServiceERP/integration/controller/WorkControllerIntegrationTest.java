@@ -152,7 +152,7 @@ public class WorkControllerIntegrationTest {
                         .param("toDate", "2023-01-31T23:59:59+00:00")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(content().string("6000.0"));
+                .andExpect(jsonPath("totalCost", is(6000.0)));
     }
 
     @Test

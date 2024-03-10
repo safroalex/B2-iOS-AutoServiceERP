@@ -65,9 +65,9 @@ public class WorkService {
      * @return Общая стоимость работ
      */
     public Double getTotalCost(OffsetDateTime fromDate, OffsetDateTime toDate) {
-        // Прямая передача OffsetDateTime в репозиторий, предполагая, что он тоже обновлен
         return workRepository.sumTotalCost(fromDate, toDate);
     }
+
 
     public List<MasterDTO> getTopMasters(OffsetDateTime fromDate, OffsetDateTime toDate) {
         Pageable topFive = PageRequest.of(0, 5); // Ограничиваем количество результатов первыми пятью
