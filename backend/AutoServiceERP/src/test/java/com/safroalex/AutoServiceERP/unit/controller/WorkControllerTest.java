@@ -31,15 +31,14 @@ import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
+
 @ExtendWith(MockitoExtension.class)
 public class WorkControllerTest {
 
     @Mock
     private WorkService workService;
-
     @InjectMocks
     private WorkController workController;
-
     private MockMvc mockMvc;
     private ObjectMapper objectMapper;
 
@@ -181,5 +180,4 @@ public class WorkControllerTest {
         // Проверка, что метод удаления был вызван
         verify(workService, times(1)).deleteWork(workId);
     }
-
 }

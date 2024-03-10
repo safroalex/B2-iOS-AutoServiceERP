@@ -1,15 +1,16 @@
 package com.safroalex.AutoServiceERP.service;
 
+import com.safroalex.AutoServiceERP.dto.MasterDTO;
 import com.safroalex.AutoServiceERP.exception.ResourceNotFoundException;
 import com.safroalex.AutoServiceERP.model.Work;
 import com.safroalex.AutoServiceERP.repository.WorkRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Service
 public class WorkService {
@@ -55,26 +56,19 @@ public class WorkService {
         workRepository.delete(work);
     }
 
-    public Map<String, Double> getCostSummary(Date startDate, Date endDate) {
-        List<Work> works = workRepository.findAllByDateWorkBetween(startDate, endDate);
-        System.out.println("Работы: " + works);
+    /**
+     * Получить общую стоимость работ за указанный период времени для отечественных или импортных автомобилей.
+     *
+     * @param fromDate Начальная дата периода
+     * @param toDate Конечная дата периода
+     * @return Общая стоимость работ
+     */
+    public Double getTotalCost(Date fromDate, Date toDate) {
+        return workRepository.sumTotalCost(fromDate, toDate);
+    }
 
-        double costOur = 0.0;
-        double costForeign = 0.0;
-
-        for (Work work : works) {
-            System.out.println("Работа: " + work);
-            if (work.getCar().isForeign()) {
-                costForeign += work.getService().getCostForeign();
-            } else {
-                costOur += work.getService().getCostOur();
-            }
-        }
-
-        Map<String, Double> costSummary = new HashMap<>();
-        costSummary.put("costOur", costOur);
-        costSummary.put("costForeign", costForeign);
-
-        return costSummary;
+    public List<MasterDTO> getTopMasters(Date fromDate, Date toDate) {
+        Pageable topFive = PageRequest.of(0, 5); // Получаем первые 5 результатов
+        return workRepository.listTopMasters(fromDate, toDate, topFive);
     }
 }
