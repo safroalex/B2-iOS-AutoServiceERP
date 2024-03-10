@@ -58,6 +58,4 @@ class WorkNetworkManager {
             completion(true)
         }.resume()
     }
-
-    // Методы для получения, обновления и удаления работы будут добавлены аналогично
 }

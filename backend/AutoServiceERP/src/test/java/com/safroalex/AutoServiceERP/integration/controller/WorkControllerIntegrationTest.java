@@ -24,6 +24,8 @@ import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
 
+import java.time.OffsetDateTime;
+import java.time.ZoneOffset;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -71,9 +73,8 @@ public class WorkControllerIntegrationTest {
     private WorkRepository workRepository;
     @BeforeEach
     void setUp() throws Exception {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX");
-        Date workDate1 = sdf.parse("2023-01-15T12:00:00+00:00"); // Дата внутри диапазона
-        Date workDate2 = sdf.parse("2023-01-20T12:00:00+00:00"); // Еще одна дата внутри диапазона
+        OffsetDateTime workDate1 = OffsetDateTime.of(2023, 1, 15, 12, 0, 0, 0, ZoneOffset.UTC); // Дата внутри диапазона
+        OffsetDateTime workDate2 = OffsetDateTime.of(2023, 1, 20, 12, 0, 0, 0, ZoneOffset.UTC); // Еще одна дата внутри диапазона
 
         // Создание и сохранение мастеров
         Master master1 = new Master();
@@ -134,7 +135,7 @@ public class WorkControllerIntegrationTest {
         createWork(master6, car2, service, workDate2);
     }
 
-    private void createWork(Master master, Car car, Service service, Date workDate) {
+    private void createWork(Master master, Car car, Service service, OffsetDateTime workDate) {
         Work work = new Work();
         work.setDateWork(workDate);
         work.setMaster(master);
@@ -146,12 +147,9 @@ public class WorkControllerIntegrationTest {
 
     @Test
     void getTotalCostForPeriodTest() throws Exception {
-        String fromDate = "2023-01-01T00:00:00+00:00";
-        String toDate = "2023-01-31T23:59:59+00:00";
-
         mockMvc.perform(get("/api/works/total-cost")
-                        .param("fromDate", fromDate)
-                        .param("toDate", toDate)
+                        .param("fromDate", "2023-01-01T00:00:00+00:00")
+                        .param("toDate", "2023-01-31T23:59:59+00:00")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().string("6000.0"));
@@ -167,8 +165,8 @@ public class WorkControllerIntegrationTest {
                         .param("toDate", toDate)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$", hasSize(5))) // Проверяем мастеров
-                .andExpect(jsonPath("$[0].name", is("Петр Петрович"))) // Проверяем имя первого мастера в списке
-                .andExpect(jsonPath("$[0].numberOfWorks", is(greaterThan(2)))); // Проверяем, что у первого мастера есть работы
+                .andExpect(jsonPath("$", hasSize(5))) // Проверяем, что вернулось 5 мастеров
+                .andExpect(jsonPath("$[0].name", is("Петр Петрович"))) // Проверяем имя мастера, который выполнил наибольшее количество работ
+                .andExpect(jsonPath("$[0].numberOfWorks", is(greaterThan(2)))); // Проверяем, что у мастера более 2 работ
     }
 }

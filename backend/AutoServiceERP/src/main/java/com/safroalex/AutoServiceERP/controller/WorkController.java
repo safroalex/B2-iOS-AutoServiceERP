@@ -7,12 +7,19 @@ import com.safroalex.AutoServiceERP.model.Work;
 import com.safroalex.AutoServiceERP.service.WorkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.expression.ParseException;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.text.SimpleDateFormat;
+import java.time.OffsetDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 
 @RestController
 @RequestMapping("/api/works")
@@ -64,47 +71,43 @@ public class WorkController {
     public ResponseEntity<?> getTotalCost(
             @RequestParam(value = "fromDate", required = false) String fromDateStr,
             @RequestParam(value = "toDate", required = false) String toDateStr) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX");
-        Date fromDate = null;
-        Date toDate = null;
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssXXX");
+
+        OffsetDateTime fromDate = null;
+        OffsetDateTime toDate = null;
+
         try {
             if (fromDateStr != null) {
-                fromDate = dateFormat.parse(fromDateStr);
+                fromDate = OffsetDateTime.parse(fromDateStr, formatter);
             }
             if (toDateStr != null) {
-                toDate = dateFormat.parse(toDateStr);
+                toDate = OffsetDateTime.parse(toDateStr, formatter);
             }
-            // ошибка и автоматического преобразования типов Spring.
+
+            // Преобразуйте OffsetDateTime обратно в Date, если ваш WorkService ожидает Date
+            // Или обновите WorkService, чтобы работать с OffsetDateTime напрямую
+
+            // Предположим, что ваш WorkService уже обновлен для работы с OffsetDateTime
             return ResponseEntity.ok(workService.getTotalCost(fromDate, toDate));
-        } catch (ParseException e) {
-            // Обработка ошибки парсинга даты
-            return ResponseEntity.badRequest().body("Неверный формат даты");
-        } catch (java.text.ParseException e) {
-            throw new RuntimeException(e);
+
+        } catch (DateTimeParseException e) {
+            return ResponseEntity.badRequest().body("Неверный формат даты: " + e.getMessage());
         }
     }
 
+
     @GetMapping("/top-masters")
     public ResponseEntity<?> getTopMasters(
-            @RequestParam(value = "fromDate", required = false) String fromDateStr,
-            @RequestParam(value = "toDate", required = false) String toDateStr) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX");
-        Date fromDate = null;
-        Date toDate = null;
+            @RequestParam(value = "fromDate", required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) OffsetDateTime fromDate,
+            @RequestParam(value = "toDate", required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) OffsetDateTime toDate) {
         try {
-            if (fromDateStr != null) {
-                fromDate = dateFormat.parse(fromDateStr);
-            }
-            if (toDateStr != null) {
-                toDate = dateFormat.parse(toDateStr);
-            }
             List<MasterDTO> topMasters = workService.getTopMasters(fromDate, toDate);
             return ResponseEntity.ok(topMasters);
-        } catch (ParseException e) {
-            return ResponseEntity.badRequest().body("Неверный формат даты");
-        } catch (java.text.ParseException e) {
-            throw new RuntimeException(e);
+        } catch (Exception e) {
+            logger.error("Error retrieving top masters", e);
+            return ResponseEntity.badRequest().body("Ошибка при получении данных");
         }
     }
+
 
 }

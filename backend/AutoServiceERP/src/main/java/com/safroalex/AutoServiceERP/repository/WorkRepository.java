@@ -8,16 +8,17 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
+import java.time.OffsetDateTime;
 import java.util.Date;
 import java.util.List;
 
 
 public interface WorkRepository extends JpaRepository<Work, Long> {
-    List<Work> findAllByDateWorkBetween(Date startDate, Date endDate);
+    List<Work> findAllByDateWorkBetween(OffsetDateTime startDate, OffsetDateTime endDate);
 
     @Query("SELECT SUM(CASE WHEN w.car.isForeign = true THEN s.costForeign ELSE s.costOur END) " +
             "FROM Work w JOIN w.service s WHERE w.dateWork BETWEEN :fromDate AND :toDate")
-    Double sumTotalCost(Date fromDate, Date toDate);
+    Double sumTotalCost(OffsetDateTime fromDate, OffsetDateTime toDate);
 
 
     @Query("SELECT new com.safroalex.AutoServiceERP.dto.MasterDTO(m.id, m.name, COUNT(w)) " +
@@ -25,6 +26,6 @@ public interface WorkRepository extends JpaRepository<Work, Long> {
             "WHERE w.dateWork BETWEEN :fromDate AND :toDate " +
             "GROUP BY m.id, m.name " +
             "ORDER BY COUNT(w) DESC")
-    List<MasterDTO> listTopMasters(Date fromDate, Date toDate, Pageable pageable);
+    List<MasterDTO> listTopMasters(OffsetDateTime fromDate, OffsetDateTime toDate, Pageable pageable);
 
 }

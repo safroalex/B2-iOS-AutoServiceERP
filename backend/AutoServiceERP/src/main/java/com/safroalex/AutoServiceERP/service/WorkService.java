@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import java.time.OffsetDateTime;
 
 import java.util.Date;
 import java.util.List;
@@ -63,12 +64,14 @@ public class WorkService {
      * @param toDate Конечная дата периода
      * @return Общая стоимость работ
      */
-    public Double getTotalCost(Date fromDate, Date toDate) {
+    public Double getTotalCost(OffsetDateTime fromDate, OffsetDateTime toDate) {
+        // Прямая передача OffsetDateTime в репозиторий, предполагая, что он тоже обновлен
         return workRepository.sumTotalCost(fromDate, toDate);
     }
 
-    public List<MasterDTO> getTopMasters(Date fromDate, Date toDate) {
-        Pageable topFive = PageRequest.of(0, 5); // Получаем первые 5 результатов
+    public List<MasterDTO> getTopMasters(OffsetDateTime fromDate, OffsetDateTime toDate) {
+        Pageable topFive = PageRequest.of(0, 5); // Ограничиваем количество результатов первыми пятью
         return workRepository.listTopMasters(fromDate, toDate, topFive);
     }
+
 }

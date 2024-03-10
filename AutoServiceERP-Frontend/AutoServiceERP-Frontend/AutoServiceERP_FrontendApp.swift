@@ -31,13 +31,6 @@ struct MainTabView: View {
 }
 
 
-
-struct StatistikaView: View {
-    var body: some View {
-        Text("Аналитика")
-    }
-}
-
 @main
 struct AutoServiceERP_FrontendApp: App {
     @State private var isAuthenticated = false

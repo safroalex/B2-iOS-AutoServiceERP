@@ -2,6 +2,7 @@ package com.safroalex.AutoServiceERP.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
+import java.time.OffsetDateTime;
 
 import java.util.Date;
 
@@ -14,7 +15,7 @@ public class Work {
 
     @Column(name = "date_work")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ssXXX")
-    private Date dateWork;
+    private OffsetDateTime dateWork;
 
     @ManyToOne
     @JoinColumn(name = "master_id", referencedColumnName = "id")
@@ -37,11 +38,11 @@ public class Work {
         this.id = id;
     }
 
-    public Date getDateWork() {
+    public OffsetDateTime getDateWork() {
         return dateWork;
     }
 
-    public void setDateWork(Date dateWork) {
+    public void setDateWork(OffsetDateTime dateWork) {
         this.dateWork = dateWork;
     }
 
